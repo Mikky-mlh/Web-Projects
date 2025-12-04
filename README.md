@@ -11,7 +11,7 @@ Modern survey form with glassmorphism design.
 
 **Tech:** HTML5, CSS3  
 **Features:** Gradient backgrounds, form validation, responsive  
-**Live:** [View Demo](link)
+**Live:** 
 
 ---
 
