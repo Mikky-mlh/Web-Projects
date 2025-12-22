@@ -4,7 +4,7 @@
 
 ### A curated collection of responsive web projects showcasing modern UI/UX design and clean architecture
 
-[![Live Portfolio](https://img.shields.io/badge/🌐_Live-Portfolio-4c1?style=for-the-badge&logo=github&logoColor=white)](https://mikky-mlh.github.io/Basic-Web-Projects/)
+[![Live Portfolio](https://img.shields.io/badge/🌐_Live-Portfolio-4c1?style=for-the-badge&logo=github&logoColor=white)](https://mikky-mlh.github.io/Web-Projects/)
 [![License](https://img.shields.io/badge/📜_License-MIT-0080ff?style=for-the-badge)](./LICENSE)
 [![freeCodeCamp](https://img.shields.io/badge/Certification-freeCodeCamp-0a0a23?style=for-the-badge&logo=freecodecamp)](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
 
