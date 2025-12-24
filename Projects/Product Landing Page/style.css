@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 242, 255, 0.2);
+    z-index: 1000;
+}
+
+#header-img {
+    height: 40px;
+}
+
+#nav-bar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #00f2ff;
+}
+
+#hero {
+    padding: 200px 60px 100px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 0%, rgba(188, 19, 254, 0.15), transparent 50%);
+}
+
+#hero h1 {
+    font-size: 5em;
+    background: linear-gradient(135deg, #00f2ff, #bc13fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5em;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#email {
+    padding: 15px 25px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 242, 255, 0.3);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1em;
+}
+
+#email::placeholder {
+    color: #666;
+}
+
+#submit {
+    padding: 15px 40px;
+    background: linear-gradient(135deg, #00f2ff, #bc13fe);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 242, 255, 0.4);
+}
+
+#features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 100px 60px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 242, 255, 0.2);
+    border-radius: 16px;
+    padding: 40px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    border-color: #00f2ff;
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.feature h3 {
+    color: #00f2ff;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    color: #aaa;
+}
+
+#video-section {
+    padding: 100px 60px;
+    text-align: center;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 242, 255, 0.05), transparent 70%);
+}
+
+#video-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #00f2ff;
+}
+
+#video {
+    border-radius: 16px;
+    border: 2px solid rgba(188, 19, 254, 0.3);
+}
+
+#pricing {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2.5em;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #bc13fe, #00f2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 40px;
+    flex: 1;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+
+.card.featured {
+    border: 2px solid #00f2ff;
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2.5em;
+    color: #00f2ff;
+    margin-bottom: 30px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.card li {
+    padding: 10px 0;
+    color: #aaa;
+}
+
+.card button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #bc13fe, #00f2ff);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card button:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    #nav-bar {
+        gap: 20px;
+    }
+
+    #hero {
+        padding: 150px 20px 60px;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    #form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #email {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    #features {
+        flex-direction: column;
+        align-items: center;
+        padding: 60px 20px;
+    }
+
+    #video-section {
+        padding: 60px 20px;
+    }
+
+    #video {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    #pricing {
+        padding: 60px 20px;
+    }
+
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card.featured {
+        transform: scale(1);
+    }
+}

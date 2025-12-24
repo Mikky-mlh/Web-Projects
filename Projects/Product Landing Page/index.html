@@ -1,9 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
-        <title>Product Landing Page</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith G1 | Personal Quantum Computer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Zenith Logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#video">Demo</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Zenith G1</h1>
+        <p>The world's first personal quantum computer</p>
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            <input id="submit" type="submit" value="Get Early Access">
+        </form>
+    </section>
+
+    <section id="features">
+        <div class="feature">
+            <div class="icon">⚛️</div>
+            <h3>Quantum Processing</h3>
+            <p>128-qubit processor delivering unprecedented computational power</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🔐</div>
+            <h3>Quantum Encryption</h3>
+            <p>Unbreakable security using quantum key distribution</p>
+        </div>
+        <div class="feature">
+            <div class="icon">⚡</div>
+            <h3>Instant Results</h3>
+            <p>Solve complex problems in milliseconds, not hours</p>
+        </div>
+    </section>
+
+    <section id="video-section">
+        <h2>See It In Action</h2>
+        <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Developer</h3>
+                <p class="price">$49,999</p>
+                <ul>
+                    <li>64-qubit processor</li>
+                    <li>Cloud integration</li>
+                    <li>24/7 support</li>
+                </ul>
+                <button>Pre-Order</button>
+            </div>
+            <div class="card featured">
+                <h3>Professional</h3>
+                <p class="price">$99,999</p>
+                <ul>
+                    <li>128-qubit processor</li>
+                    <li>Advanced AI toolkit</li>
+                    <li>Priority support</li>
+                </ul>
+                <button>Pre-Order</button>
+            </div>
+            <div class="card">
+                <h3>Enterprise</h3>
+                <p class="price">$199,999</p>
+                <ul>
+                    <li>256-qubit processor</li>
+                    <li>Custom solutions</li>
+                    <li>Dedicated team</li>
+                </ul>
+                <button>Pre-Order</button>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
