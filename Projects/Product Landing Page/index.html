@@ -28,9 +28,13 @@
             <div class="hero-content">
                 <h1>Quantum Supremacy<br>On Your <span class="neon-text">Desk</span></h1>
                 <p>The Zenith G1 isn't just a computer. It's a portal to infinite probability. 50 Qubits. Zero Latency. Absolute Power.</p>
-                <form id="form" action="https://formsubmit.co/yuvrajsarathe07@gmail.com" method="POST">
+                <form id="form" action="https://formsubmit.co/5ff7a2ba7a8647f05d27c43c26474e73" method="POST" onsubmit="return true;">
+                    <input type="hidden" name="_next" value="https://mikky-mlh.github.io/Basic-Web-Projects/Projects/Product%20Landing%20Page/thank-you.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_autoresponse" value="Thank you for your interest in Zenith G1!">
                     <div class="input-group">
-                        <input type="email" id="email" name="email" placeholder="Enter your email for early access" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email for early access" autocomplete="off" required>
                         <input type="submit" id="submit" value="RESERVE UNIT">
                     </div>
                 </form>
@@ -58,8 +62,19 @@
 
         <section id="video-section">
             <h2>Witness The <span class="highlight">Shift</span></h2>
-            <div class="video-container">
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QuR5z0ImLhk?controls=0" title="Zenith G1 Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="Quantum3.png" alt="Zenith G1 Workspace Setup">
+                    <div class="overlay">Complete Quantum Workspace</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Quantum2.png" alt="Quantum Processor Core">
+                    <div class="overlay">50-Qubit Processor Core</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Quantum1.png" alt="Zenith G1 Unit">
+                    <div class="overlay">Zenith G1 Quantum Computer</div>
+                </div>
             </div>
         </section>
 
@@ -75,7 +90,7 @@
                     <li>Standard SDK</li>
                     <li>Community Support</li>
                 </ul>
-                <button class="btn-select">Select</button>
+                <button class="btn-select" onclick="scrollToEmail(this); return false;">Select</button>
             </div>
             <div class="pricing-card featured">
                 <div class="card-header">
@@ -89,7 +104,7 @@
                     <li>Advanced SDK + API</li>
                     <li>24/7 Priority Support</li>
                 </ul>
-                <button class="btn-select">Select</button>
+                <button class="btn-select" onclick="scrollToEmail(this); return false;">Select</button>
             </div>
             <div class="pricing-card">
                 <div class="card-header">
@@ -102,7 +117,7 @@
                     <li>Dedicated Engineer</li>
                     <li>Lifetime Warranty</li>
                 </ul>
-                <button class="btn-select">Select</button>
+                <button class="btn-select" onclick="scrollToEmail(this); return false;">Select</button>
             </div>
         </section>
     </main>
@@ -111,11 +126,90 @@
         <div class="footer-content">
             <span>&copy; 2025 Zenith Quantum Computing</span>
             <div class="socials">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="mailto:yuvrajsarathe07@gmail.com">Contact</a>
+                <a href="#" onclick="openModal('privacy-modal'); return false;">Privacy</a>
+                <a href="#" onclick="openModal('terms-modal'); return false;">Terms</a>
+                <a href="#" onclick="openModal('contact-modal'); return false;">Contact</a>
             </div>
         </div>
     </footer>
+
+    <!-- Privacy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('privacy-modal')">&times;</span>
+            <h2>Privacy <span class="highlight">Policy</span></h2>
+            <div class="modal-body">
+                <p><strong>1. Data Collection:</strong> We collect only your email address for product updates. In quantum superposition, your data exists in all states simultaneously until you unsubscribe.</p>
+                <p><strong>2. Data Storage:</strong> Your information is encrypted using quantum-resistant algorithms and stored in a secure, temperature-controlled environment at 0.01 Kelvin.</p>
+                <p><strong>3. Third Parties:</strong> We do not share your data with third parties, alternate dimensions, or parallel universes without your explicit consent.</p>
+                <p><strong>4. Your Rights:</strong> You have the right to access, modify, or delete your data at any point in the space-time continuum.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms Modal -->
+    <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('terms-modal')">&times;</span>
+            <h2>Terms of <span class="highlight">Service</span></h2>
+            <div class="modal-body">
+                <p><strong>1. Quantum Liability:</strong> Zenith Computing is not responsible for any timeline fractures, reality distortions, or alternate universe creations resulting from the use of the G1 unit.</p>
+                <p><strong>2. Usage:</strong> The G1 is intended for computational supremacy. Use for decrypting government secrets is strictly... encouraged, but at your own risk.</p>
+                <p><strong>3. Warranty:</strong> Void if the containment field is breached or if the unit is exposed to temperatures above 0.01 Kelvin.</p>
+                <p><strong>4. Privacy:</strong> We do not collect your data. In a quantum state, your data both exists and does not exist until observed.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal">
+        <div class="modal-content contact-card">
+            <span class="close-btn" onclick="closeModal('contact-modal')">&times;</span>
+            <h2>Initiate <span class="highlight">Contact</span></h2>
+            <div class="contact-links">
+                <a href="mailto:yuvrajsarathe07@gmail.com" class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>yuvrajsarathe07@gmail.com</span>
+                </a>
+                <a href="https://github.com/mikky-mlh" target="_blank" class="contact-item">
+                    <i class="fa-brands fa-github"></i>
+                    <span>github.com/mikky-mlh</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close modal if clicking outside content
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function scrollToEmail(button) {
+            const allCards = document.querySelectorAll('.pricing-card');
+            allCards.forEach(card => card.classList.remove('featured'));
+            button.closest('.pricing-card').classList.add('featured');
+            
+            document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+            setTimeout(() => {
+                const emailInput = document.getElementById('email');
+                emailInput.focus();
+                emailInput.placeholder = '👉 Enter your email here to reserve your unit';
+            }, 500);
+        }
+    </script>
 </body>
 </html>
