@@ -3,85 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zenith G1 | Personal Quantum Computer</title>
+    <title>Zenith G1 | Quantum Personal Computer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header id="header">
-        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Zenith Logo">
+        <a href="https://github.com/mikky-mlh" class="logo-wrapper" target="_blank">
+            <img id="header-img" src="Circle LOGO.png" alt="Zenith Logo">
+            <span class="logo-text">ZENITH <span class="highlight">G1</span></span>
+        </a>
         <nav id="nav-bar">
-            <a class="nav-link" href="#features">Features</a>
-            <a class="nav-link" href="#video">Demo</a>
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <ul>
+                <li><a class="nav-link" href="#features">Capabilities</a></li>
+                <li><a class="nav-link" href="#video-section">Demo</a></li>
+                <li><a class="nav-link" href="#pricing">Acquire</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1>Zenith G1</h1>
-        <p>The world's first personal quantum computer</p>
-        <form id="form" action="https://www.freecodecamp.org/email-submit">
-            <input id="email" name="email" type="email" placeholder="Enter your email" required>
-            <input id="submit" type="submit" value="Get Early Access">
-        </form>
-    </section>
-
-    <section id="features">
-        <div class="feature">
-            <div class="icon">⚛️</div>
-            <h3>Quantum Processing</h3>
-            <p>128-qubit processor delivering unprecedented computational power</p>
-        </div>
-        <div class="feature">
-            <div class="icon">🔐</div>
-            <h3>Quantum Encryption</h3>
-            <p>Unbreakable security using quantum key distribution</p>
-        </div>
-        <div class="feature">
-            <div class="icon">⚡</div>
-            <h3>Instant Results</h3>
-            <p>Solve complex problems in milliseconds, not hours</p>
-        </div>
-    </section>
-
-    <section id="video-section">
-        <h2>See It In Action</h2>
-        <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen></iframe>
-    </section>
-
-    <section id="pricing">
-        <h2>Choose Your Plan</h2>
-        <div class="pricing-cards">
-            <div class="card">
-                <h3>Developer</h3>
-                <p class="price">$49,999</p>
-                <ul>
-                    <li>64-qubit processor</li>
-                    <li>Cloud integration</li>
-                    <li>24/7 support</li>
-                </ul>
-                <button>Pre-Order</button>
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Quantum Supremacy<br>On Your <span class="neon-text">Desk</span></h1>
+                <p>The Zenith G1 isn't just a computer. It's a portal to infinite probability. 50 Qubits. Zero Latency. Absolute Power.</p>
+                <form id="form" action="https://formsubmit.co/yuvrajsarathe07@gmail.com" method="POST">
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" placeholder="Enter your email for early access" required>
+                        <input type="submit" id="submit" value="RESERVE UNIT">
+                    </div>
+                </form>
             </div>
-            <div class="card featured">
-                <h3>Professional</h3>
-                <p class="price">$99,999</p>
-                <ul>
-                    <li>128-qubit processor</li>
-                    <li>Advanced AI toolkit</li>
-                    <li>Priority support</li>
-                </ul>
-                <button>Pre-Order</button>
+            <div class="hero-bg-glow"></div>
+        </section>
+
+        <section id="features">
+            <div class="feature-card">
+                <i class="fa-solid fa-atom icon"></i>
+                <h3>50-Qubit Core</h3>
+                <p>Proprietary superconducting qubits operating at near-absolute zero for unparalleled coherence times.</p>
             </div>
-            <div class="card">
-                <h3>Enterprise</h3>
-                <p class="price">$199,999</p>
+            <div class="feature-card">
+                <i class="fa-solid fa-microchip icon"></i>
+                <h3>Neural Interface</h3>
+                <p>Direct brain-computer interface compatibility for seamless thought-to-action processing.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fa-solid fa-shield-halved icon"></i>
+                <h3>Quantum Encryption</h3>
+                <p>Unbreakable encryption keys generated by true quantum randomness. Your data is physically secure.</p>
+            </div>
+        </section>
+
+        <section id="video-section">
+            <h2>Witness The <span class="highlight">Shift</span></h2>
+            <div class="video-container">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/QuR5z0ImLhk?controls=0" title="Zenith G1 Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Developer</h3>
+                    <div class="price">$4,999</div>
+                </div>
                 <ul>
-                    <li>256-qubit processor</li>
-                    <li>Custom solutions</li>
-                    <li>Dedicated team</li>
+                    <li>10 Qubit Processor</li>
+                    <li>Cloud Access</li>
+                    <li>Standard SDK</li>
+                    <li>Community Support</li>
                 </ul>
-                <button>Pre-Order</button>
+                <button class="btn-select">Select</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="card-header">
+                    <h3>Pro Edition</h3>
+                    <div class="price">$12,499</div>
+                    <span class="badge">MOST POPULAR</span>
+                </div>
+                <ul>
+                    <li>50 Qubit Processor</li>
+                    <li>Local Processing</li>
+                    <li>Advanced SDK + API</li>
+                    <li>24/7 Priority Support</li>
+                </ul>
+                <button class="btn-select">Select</button>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Enterprise</h3>
+                    <div class="price">$49,999</div>
+                </div>
+                <ul>
+                    <li>100+ Qubit Array</li>
+                    <li>Custom Cooling Solution</li>
+                    <li>Dedicated Engineer</li>
+                    <li>Lifetime Warranty</li>
+                </ul>
+                <button class="btn-select">Select</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2025 Zenith Quantum Computing</span>
+            <div class="socials">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="mailto:yuvrajsarathe07@gmail.com">Contact</a>
             </div>
         </div>
-    </section>
+    </footer>
 </body>
 </html>
