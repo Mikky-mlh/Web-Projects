@@ -1,10 +1,24 @@
+:root {
+    --bg-dark: #0a0a14;
+    --bg-panel: rgba(30, 30, 60, 0.4);
+    --primary-blue: #4d7cfe;
+    --primary-purple: #9333ea;
+    --text-main: #ffffff;
+    --text-muted: #a8b3cf;
+    --font-heading: 'Orbitron', sans-serif;
+    --font-body: 'Rajdhani', sans-serif;
+}
+
 body {
     width: 100%; 
     height: 100vh;
     margin: 0; 
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: #f5f6f7; 
-    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: var(--bg-dark);
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(77, 124, 254, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(147, 51, 234, 0.15) 0%, transparent 50%);
+    color: var(--text-main); 
+    font-family: var(--font-body); 
     font-size: 16px; 
 }
 
@@ -14,8 +28,13 @@ h1, p {
 }
 
 h1 {
+    font-family: var(--font-heading);
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 form {
@@ -24,16 +43,17 @@ form {
     min-width: 300px; 
     margin: 0 auto; 
     padding: 2em;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
+    background: var(--bg-panel);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 
 fieldset {
     border: none; 
     padding: 1.5rem 0; 
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(77, 124, 254, 0.2);
 }
 
 fieldset:last-of-type {
@@ -54,33 +74,39 @@ select {
 }
 
 input, textarea, select {
-    background-color: rgba(255,255,255,0.9);
-    border: 2px solid transparent;
+    background: rgba(255,255,255,0.05);
+    border: 2px solid rgba(77, 124, 254, 0.3);
     border-radius: 8px;
     padding: 0.5em;
-    color: black;
+    color: var(--text-main);
     transition: all 0.3s ease;
+}
+
+select option {
+    background: rgba(20, 20, 40, 0.95);
+    color: var(--text-main);
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-    -webkit-text-fill-color: black;
-    -webkit-box-shadow: 0 0 0px 1000px rgba(255,255,255,0.9) inset;
+    -webkit-text-fill-color: white;
+    -webkit-box-shadow: 0 0 0px 1000px rgba(30, 30, 60, 0.8) inset;
     transition: background-color 5000s ease-in-out 0s;
 }
 
 input:focus, textarea:focus, select:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 10px rgba(102,126,234,0.5);
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 15px rgba(77, 124, 254, 0.5);
+    background: rgba(255,255,255,0.08);
 }
 
 .inline {
     width: unset; 
     margin: 0 0.5em 0 0; 
     vertical-align: middle;
-    accent-color: #667eea;
+    accent-color: var(--primary-blue);
 }
 
 button[type="submit"] {
@@ -88,24 +114,27 @@ button[type="submit"] {
     width: 100%;
     margin: 2em auto 0;
     padding: 1em;
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     font-weight: bold;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
     color: white;
-    border: none;
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 10px;
     cursor: pointer;
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: all 0.3s ease;
 }
 
 button[type="submit"]:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 25px rgba(77, 124, 254, 0.5);
 }
 
 button[type="submit"]:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    transform: translateY(1px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 textarea {
@@ -133,30 +162,31 @@ footer {
 
 .social-btn {
     padding: 10px 20px;
-    background: rgba(255,255,255,0.2);
-    color: #f5f6f7;
+    background: rgba(77, 124, 254, 0.2);
+    backdrop-filter: blur(10px);
+    color: var(--text-main);
     text-decoration: none;
     border-radius: 8px;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(77, 124, 254, 0.3);
     transition: all 0.3s ease;
 }
 
 .social-btn:hover {
-    background: rgba(255,255,255,0.3);
+    background: rgba(77, 124, 254, 0.4);
+    border-color: var(--primary-blue);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 5px 20px rgba(77, 124, 254, 0.4);
 }
 
 ::placeholder {
-    color: #666;
+    color: var(--text-muted);
     opacity: 0.7;
 }
 
-
 input:invalid:not(:focus) {
-    border-color: #ff6b6b;
+    border-color: #ef4444;
 }
 
 input:valid:not(:placeholder-shown) {
-    border-color: #51cf66;
+    border-color: #10b981;
 }

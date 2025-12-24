@@ -3,28 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css" />
         <title>Survey Form</title>
     </head>
     <body>
         <h1 id="title">Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
-        <form id="survey-form">
+        <form id="survey-form" action="https://formsubmit.co/5ff7a2ba7a8647f05d27c43c26474e73" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Survey Form Submission">
+            <input type="hidden" name="_next" value="https://mikky-mlh.github.io/Web-Projects/Projects/Survey%20Form/thank-you.html">
             <fieldset class="form-group">
                 <label id="name-label" for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </fieldset>
             <fieldset class="form-group">
                 <label id="email-label" for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </fieldset>
             <fieldset class="form-group">
                 <label id="number-label" for="number">Age(optional)</label>
-                <input type="number" id="number" placeholder="Age" min="13" max="120">
+                <input type="number" id="number" name="age" placeholder="Age" min="13" max="120">
             </fieldset>
             <fieldset class="form-group">
                 <p>Which option best describes your current role?</p>
-                <select id="dropdown" required>
+                <select id="dropdown" name="role" required>
                     <option disabled selected value>Select current role</option>
                     <option value="student">Student</option>
                     <option value="full-time-learner">Full Time Learner</option>
@@ -47,7 +51,7 @@
             </fieldset>
             <fieldset class="form-group">
                 <p>What is your favorite feature of the platform?</p>
-                <select id="most-like" required>
+                <select id="most-like" name="favorite-feature" required>
                     <option disabled selected value>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
@@ -75,7 +79,7 @@
             </fieldset>
             <fieldset class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+                <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
             </fieldset>
             <button type="submit" id="submit">Submit</button>
         </form>
