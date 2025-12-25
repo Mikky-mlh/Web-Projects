@@ -328,28 +328,26 @@ p code {
     padding: 25px 30px;
     border-radius: 16px;
     text-decoration: none;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
     background: rgba(20, 20, 35, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
-    animation: cardPulse 4s infinite;
 }
 
 .connect-btn:hover {
-    transform: scale(1.05);
+    transform: scale(1.03) translateY(-3px);
     background: rgba(30, 30, 50, 0.8);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-    animation-play-state: paused;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .btn-icon {
     font-size: 2.2em;
     margin-right: 20px;
     color: var(--text-muted);
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .btn-content {
@@ -373,42 +371,46 @@ p code {
 
 .github-btn:hover {
     border-color: #5865f2;
-    box-shadow: 0 0 25px rgba(88, 101, 242, 0.25);
+    box-shadow: 0 12px 30px rgba(88, 101, 242, 0.3);
 }
 
 .github-btn:hover .btn-icon {
     color: #5865f2;
     filter: drop-shadow(0 0 8px rgba(88, 101, 242, 0.6));
+    transform: scale(1.1);
 }
 
 .linkedin-btn:hover {
     border-color: #0077b5;
-    box-shadow: 0 0 25px rgba(0, 119, 181, 0.25);
+    box-shadow: 0 12px 30px rgba(0, 119, 181, 0.3);
 }
 
 .linkedin-btn:hover .btn-icon {
     color: #0077b5;
     filter: drop-shadow(0 0 8px rgba(0, 119, 181, 0.6));
+    transform: scale(1.1);
 }
 
 .leetcode-btn:hover {
     border-color: #ffa116;
-    box-shadow: 0 0 25px rgba(255, 161, 22, 0.25);
+    box-shadow: 0 12px 30px rgba(255, 161, 22, 0.3);
 }
 
 .leetcode-btn:hover .btn-icon {
     color: #ffa116;
     filter: drop-shadow(0 0 8px rgba(255, 161, 22, 0.6));
+    transform: scale(1.1);
 }
 
 .portfolio-btn:hover {
     border-color: var(--primary-purple);
-    box-shadow: 0 0 25px rgba(147, 51, 234, 0.25);
+    box-shadow: 0 12px 30px rgba(147, 51, 234, 0.3);
 }
 
 .portfolio-btn:hover .btn-icon {
     color: var(--primary-purple);
     filter: drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
+    transform: scale(1.1);
 }
 
 .contact-info {
