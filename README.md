@@ -265,10 +265,12 @@ Web-Projects/
 │   │   ├── thank-you.html
 │   │   └── README.md
 │   │
-│   └── 🏛️ Tribute Page/
-│       ├── index.html
-│       ├── style.css
-│       └── README.md
+│   ├── 🏛️ Tribute Page/
+│   │   ├── index.html
+│   │   ├── style.css
+│   │   └── README.md
+│   │
+│   └── 📖 README.md                     # Projects overview
 │
 ├── 📜 LICENSE                           # MIT License
 └── 📖 README.md                         # Project documentation
