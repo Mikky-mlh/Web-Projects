@@ -317,48 +317,37 @@ p code {
 .connect-buttons {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin: 30px 0;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 10px;
 }
 
 .connect-btn {
     display: flex;
     align-items: center;
-    padding: 20px 25px;
-    border-radius: 12px;
+    padding: 25px 30px;
+    border-radius: 16px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.05); /* Darker, neutral base */
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
-    backdrop-filter: blur(10px);
-}
-
-.connect-btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-    transition: left 0.5s ease;
-}
-
-.connect-btn:hover::before {
-    left: 100%;
+    background: rgba(20, 20, 35, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
 }
 
 .connect-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    background: rgba(30, 30, 50, 0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
 }
 
 .btn-icon {
-    font-size: 2.5em;
-    margin-right: 15px;
+    font-size: 2.2em;
+    margin-right: 20px;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
 }
 
 .btn-content {
@@ -370,61 +359,54 @@ p code {
 .btn-title {
     font-size: 1.2em;
     font-weight: 700;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    color: #ffffff;
 }
 
 .btn-subtitle {
-    font-size: 0.85em;
-    opacity: 0.9;
-}
-
-.github-btn {
-    background: linear-gradient(135deg, rgba(88, 101, 242, 0.8), rgba(108, 92, 231, 0.8));
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(147, 51, 234, 0.5);
-    color: white;
-    border-left: 4px solid #5865f2;
+    font-size: 0.9em;
+    opacity: 0.8;
+    color: var(--text-muted);
 }
 
 .github-btn:hover {
-    background: linear-gradient(135deg, rgba(88, 101, 242, 1), rgba(108, 92, 231, 1));
-    box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+    border-color: #5865f2;
+    box-shadow: 0 0 25px rgba(88, 101, 242, 0.25);
 }
 
-.linkedin-btn {
-    background: linear-gradient(135deg, rgba(0, 119, 181, 0.8), rgba(6, 182, 212, 0.8));
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(6, 182, 212, 0.5);
-    color: white;
+.github-btn:hover .btn-icon {
+    color: #5865f2;
+    filter: drop-shadow(0 0 8px rgba(88, 101, 242, 0.6));
 }
 
 .linkedin-btn:hover {
-    background: linear-gradient(135deg, rgba(0, 119, 181, 1), rgba(6, 182, 212, 1));
-    box-shadow: 0 8px 25px rgba(6, 182, 212, 0.4);
+    border-color: #0077b5;
+    box-shadow: 0 0 25px rgba(0, 119, 181, 0.25);
 }
 
-.leetcode-btn {
-    background: linear-gradient(135deg, rgba(255, 161, 22, 0.8), rgba(251, 191, 36, 0.8));
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(251, 191, 36, 0.5);
-    color: white;
+.linkedin-btn:hover .btn-icon {
+    color: #0077b5;
+    filter: drop-shadow(0 0 8px rgba(0, 119, 181, 0.6));
 }
 
 .leetcode-btn:hover {
-    background: linear-gradient(135deg, rgba(255, 161, 22, 1), rgba(251, 191, 36, 1));
-    box-shadow: 0 8px 25px rgba(255, 161, 22, 0.4);
+    border-color: #ffa116;
+    box-shadow: 0 0 25px rgba(255, 161, 22, 0.25);
 }
 
-.portfolio-btn {
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--primary-purple);
-    color: white;
+.leetcode-btn:hover .btn-icon {
+    color: #ffa116;
+    filter: drop-shadow(0 0 8px rgba(255, 161, 22, 0.6));
 }
 
 .portfolio-btn:hover {
-    background: linear-gradient(135deg, rgba(77, 124, 254, 1), rgba(147, 51, 234, 1));
-    box-shadow: 0 8px 25px rgba(147, 51, 234, 0.5);
+    border-color: var(--primary-purple);
+    box-shadow: 0 0 25px rgba(147, 51, 234, 0.25);
+}
+
+.portfolio-btn:hover .btn-icon {
+    color: var(--primary-purple);
+    filter: drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
 }
 
 .contact-info {
