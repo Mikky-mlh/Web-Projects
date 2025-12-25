@@ -75,8 +75,25 @@
 
                 <div class="project-showcase">
                     <h3>📚 Technical Documentation Page</h3>
-                    <p><strong>Status:</strong> 🚧 In Progress</p>
+                    <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 15, 2025)</p>
                     <p>This very page you're reading! A comprehensive developer documentation showcasing my technical portfolio with modern design principles.</p>
+                </div>
+
+                <div class="project-showcase">
+                    <h3>🛍️ Product Landing Page - Zenith G1</h3>
+                    <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 24, 2025)</p>
+                    <p>A futuristic quantum computer landing page with real form submission, modal dialogs, pricing tiers, and production-grade email integration via FormSubmit.co.</p>
+                    <p><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Hero section with email capture form (real submission to inbox)</li>
+                        <li>Feature showcase cards with gradient hover effects</li>
+                        <li>Image gallery with overlay animations</li>
+                        <li>Pricing comparison table (3 tiers with featured highlighting)</li>
+                        <li>Modal dialogs (Privacy, Terms, Contact)</li>
+                        <li>Smooth scroll to email input from pricing buttons</li>
+                        <li>Thank-you page with auto-redirect</li>
+                    </ul>
+                    <p><strong>Live Demo:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Product%20Landing%20Page/" target="_blank">View Project</a></p>
                 </div>
 
                 <p><strong>Portfolio Site:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank">https://mikky-mlh.github.io/Web-Projects/</a></p>
@@ -96,7 +113,17 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}</code>
+}
+
+/* Modal Dialog System */
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+}
+
+/* Smooth Scroll with Focus */
+document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+setTimeout(() => emailInput.focus(), 500);</code>
             </article>
         </section>
 
@@ -343,7 +370,8 @@ int main() {
 
                 <h3>Core Competencies</h3>
                 <ul>
-                    <li><strong>Web Development:</strong> Responsive design, Glassmorphism, CSS animations, Semantic HTML</li>
+                    <li><strong>Web Development:</strong> Responsive design, Glassmorphism, CSS animations, Semantic HTML, Form handling</li>
+                    <li><strong>JavaScript:</strong> Modal dialogs, Smooth scroll, DOM manipulation, Event handling</li>
                     <li><strong>Game Development:</strong> Logic systems, Win detection algorithms, GUI design</li>
                     <li><strong>Systems Programming:</strong> Memory management, Console applications, ANSI codes</li>
                     <li><strong>Software Engineering:</strong> OOP, Clean code, Version control, Documentation</li>
