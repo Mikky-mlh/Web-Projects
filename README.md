@@ -232,7 +232,7 @@ Each project in this repository showcases specific technical competencies:
 | Metric | Value |
 |:-------|:------|
 | ✅ Completed Projects | 4/5 (80%) |
-| 📝 Lines of Code | 2,500+ |
+| 📝 Lines of Code | 3,500+ |
 | 🎯 Current Focus | Personal Portfolio |
 | 🚀 Next Milestone | Complete Certification |
 
@@ -247,24 +247,28 @@ Web-Projects/
 ├── 🎨 style-main.css                    # Core portfolio styling
 │
 ├── 📁 Projects/
-│   ├── 🛍️ Product Landing Page/        # NEW - Quantum computer landing
+│   ├── 🛍️ Product Landing Page/        # Quantum computer landing
 │   │   ├── index.html
 │   │   ├── style.css
 │   │   ├── thank-you.html
-│   │   └── images/
+│   │   ├── images/
+│   │   └── README.md
 │   │
 │   ├── 📚 Documentation Project/
 │   │   ├── index.html
-│   │   └── style.css
+│   │   ├── style.css
+│   │   └── README.md
 │   │
 │   ├── 📝 Survey Form/
 │   │   ├── index.html
 │   │   ├── style.css
-│   │   └── thank-you.html
+│   │   ├── thank-you.html
+│   │   └── README.md
 │   │
 │   └── 🏛️ Tribute Page/
 │       ├── index.html
-│       └── style.css
+│       ├── style.css
+│       └── README.md
 │
 ├── 📜 LICENSE                           # MIT License
 └── 📖 README.md                         # Project documentation
@@ -477,6 +481,6 @@ Got feedback or suggestions? Feel free to open an issue or reach out!
 
 ⭐ **Star this repo if you found it helpful!**
 
-*Last Updated: December 24, 2025*
+*Last Updated: December 25, 2025*
 
 </div>
