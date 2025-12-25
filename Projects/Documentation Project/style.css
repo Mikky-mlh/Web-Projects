@@ -335,12 +335,14 @@ p code {
     background: rgba(20, 20, 35, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(12px);
+    animation: cardPulse 4s infinite;
 }
 
 .connect-btn:hover {
     transform: scale(1.05);
     background: rgba(30, 30, 50, 0.8);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation-play-state: paused;
 }
 
 .btn-icon {
@@ -478,5 +480,20 @@ p code {
 
     .btn-icon {
         font-size: 2em;
+    }
+}
+
+@keyframes cardPulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+    15% {
+        box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.15);
+    }
+    30% {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.05);
     }
 }
