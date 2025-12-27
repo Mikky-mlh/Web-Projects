@@ -1,13 +1,14 @@
 :root {
-    --bg-dark: #0a0a14;
-    --bg-panel: rgba(30, 30, 60, 0.4);
-    --primary-blue: #4d7cfe;
-    --primary-purple: #9333ea;
-    --accent-cyan: #06b6d4;
-    --text-main: #ffffff;
-    --text-muted: #a8b3cf;
+    --bg-dark: #0a192f;
+    --bg-panel: rgba(17, 34, 64, 0.6);
+    --primary-blue: #64ffda;
+    --primary-purple: #8892b0;
+    --accent-cyan: #ccd6f6;
+    --text-main: #e6f1ff;
+    --text-muted: #8892b0;
     --font-heading: 'Orbitron', sans-serif;
     --font-body: 'Rajdhani', sans-serif;
+    --font-mono: 'Fira Code', 'Consolas', monospace;
 }
 
 * {
@@ -24,11 +25,9 @@ body {
     font-family: var(--font-body);
     line-height: 1.7;
     background-color: var(--bg-dark);
-    color: var(--text-main);
+    color: var(--text-muted);
     min-height: 100vh;
-    background-image: 
-        radial-gradient(circle at 20% 30%, rgba(77, 124, 254, 0.15) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(147, 51, 234, 0.15) 0%, transparent 50%);
+    background-image: linear-gradient(180deg, var(--bg-dark) 0%, #112240 100%);
 }
 
 #navbar {
@@ -47,12 +46,12 @@ body {
 
 #navbar header {
     font-family: var(--font-heading);
-    font-size: 1.6em;
+    font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     padding: 30px 20px;
     background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
-    color: white;
+    color: var(--bg-dark);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -92,7 +91,7 @@ body {
 }
 
 #navbar ul li a:hover {
-    background: rgba(77, 124, 254, 0.1);
+    background: rgba(100, 255, 218, 0.1);
     color: var(--primary-blue);
     transform: translateX(5px);
 }
@@ -126,7 +125,7 @@ body {
     font-size: 2.2em;
     font-weight: 700;
     margin-bottom: 25px;
-    color: var(--primary-blue);
+    color: var(--text-main);
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
@@ -153,7 +152,7 @@ p {
 
 h3 {
     font-family: var(--font-heading);
-    color: var(--text-main);
+    color: var(--accent-cyan);
     font-size: 1.4em;
     margin: 25px 0 15px;
     font-weight: 600;
@@ -176,19 +175,18 @@ strong {
 }
 
 code {
-    background: rgba(0, 0, 0, 0.4);
-    color: #e2e8f0;
+    background: rgba(17, 34, 64, 0.8);
+    color: #ccd6f6;
     padding: 20px;
     display: block;
-    border-radius: 12px;
+    border-radius: 8px;
     margin: 25px 0;
-    font-family: 'Fira Code', 'Consolas', monospace;
+    font-family: var(--font-mono);
     font-size: 0.9em;
     white-space: pre-wrap;
     word-wrap: break-word;
-    border: 1px solid rgba(77, 124, 254, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -200,15 +198,15 @@ code::before {
     right: 0;
     width: 100px;
     height: 100px;
-    background: radial-gradient(circle, rgba(77, 124, 254, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(100, 255, 218, 0.05) 0%, transparent 70%);
 }
 
 p code {
     display: inline;
-    background: rgba(77, 124, 254, 0.15);
+    background: rgba(100, 255, 218, 0.1);
     color: var(--primary-blue);
     padding: 3px 8px;
-    border: 1px solid rgba(77, 124, 254, 0.3);
+    border: 1px solid rgba(100, 255, 218, 0.3);
     box-shadow: none;
     font-size: 0.9em;
     border-radius: 4px;
@@ -235,7 +233,7 @@ p code {
 }
 
 #main-doc a:hover {
-    color: var(--primary-purple);
+    color: var(--text-main);
 }
 
 #main-doc a:hover::after {
@@ -246,13 +244,13 @@ p code {
     background: var(--bg-panel);
     backdrop-filter: blur(20px);
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 12px;
     margin: 30px 0;
-    border: 1px solid rgba(77, 124, 254, 0.2);
-    transition: all 0.4s ease;
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .project-showcase::before {
@@ -261,17 +259,17 @@ p code {
     top: 0;
     left: 0;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background: linear-gradient(90deg, var(--primary-blue), var(--primary-purple));
     transform: scaleX(0);
-    transition: transform 0.4s ease;
+    transition: transform 0.3s ease;
     transform-origin: left;
 }
 
 .project-showcase:hover {
-    transform: translateX(5px);
-    box-shadow: 0 12px 40px rgba(77, 124, 254, 0.3);
-    border-color: rgba(77, 124, 254, 0.4);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
+    border-color: rgba(100, 255, 218, 0.3);
 }
 
 .project-showcase:hover::before {
@@ -293,25 +291,26 @@ p code {
 }
 
 .skill-badge {
-    background: linear-gradient(135deg, var(--primary-blue), var(--primary-purple));
-    color: white;
+    background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(136, 146, 176, 0.1));
+    color: var(--primary-blue);
     padding: 12px 20px;
-    border-radius: 25px;
+    border-radius: 8px;
     text-align: center;
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
-    box-shadow: 0 4px 15px rgba(77, 124, 254, 0.3);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(100, 255, 218, 0.2);
     transition: all 0.3s ease;
+    word-break: break-word;
 }
 
 .skill-badge:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(77, 124, 254, 0.5);
+    box-shadow: 0 5px 20px rgba(100, 255, 218, 0.3);
+    border-color: var(--primary-blue);
 }
 
 .connect-buttons {
@@ -325,16 +324,15 @@ p code {
 .connect-btn {
     display: flex;
     align-items: center;
-    padding: 25px 30px;
-    border-radius: 16px;
+    padding: 20px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform, background-color, border-color, box-shadow;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    background: rgba(20, 20, 35, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--bg-panel);
+    border: 1px solid rgba(100, 255, 218, 0.1);
     backdrop-filter: blur(12px);
 }
 
@@ -345,8 +343,8 @@ p code {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.6s ease;
+    background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
 .connect-btn:hover::before {
@@ -354,21 +352,17 @@ p code {
 }
 
 .connect-btn:hover {
-    transform: scale(1.05) translateY(-5px);
-    background: rgba(30, 30, 50, 0.9);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.15);
-}
-
-.connect-btn:not(:hover) {
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(-5px);
+    background: rgba(17, 34, 64, 0.9);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
+    border-color: var(--primary-blue);
 }
 
 .btn-icon {
-    font-size: 2.2em;
+    font-size: 2em;
     margin-right: 20px;
     color: var(--text-muted);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
 }
 
 .btn-content {
@@ -378,10 +372,10 @@ p code {
 }
 
 .btn-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 700;
     margin-bottom: 4px;
-    color: #ffffff;
+    color: var(--text-main);
 }
 
 .btn-subtitle {
@@ -391,19 +385,19 @@ p code {
 }
 
 .github-btn:hover {
-    border-color: #5865f2;
-    box-shadow: 0 12px 30px rgba(88, 101, 242, 0.3);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
 }
 
 .github-btn:hover .btn-icon {
-    color: #5865f2;
-    filter: drop-shadow(0 0 8px rgba(88, 101, 242, 0.6));
+    color: var(--primary-blue);
+    filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.6));
     transform: scale(1.1);
 }
 
 .linkedin-btn:hover {
     border-color: #0077b5;
-    box-shadow: 0 12px 30px rgba(0, 119, 181, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 119, 181, 0.2);
 }
 
 .linkedin-btn:hover .btn-icon {
@@ -414,7 +408,7 @@ p code {
 
 .leetcode-btn:hover {
     border-color: #ffa116;
-    box-shadow: 0 12px 30px rgba(255, 161, 22, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 161, 22, 0.2);
 }
 
 .leetcode-btn:hover .btn-icon {
@@ -424,13 +418,13 @@ p code {
 }
 
 .portfolio-btn:hover {
-    border-color: var(--primary-purple);
-    box-shadow: 0 12px 30px rgba(147, 51, 234, 0.3);
+    border-color: var(--primary-blue);
+    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.2);
 }
 
 .portfolio-btn:hover .btn-icon {
-    color: var(--primary-purple);
-    filter: drop-shadow(0 0 8px rgba(147, 51, 234, 0.6));
+    color: var(--primary-blue);
+    filter: drop-shadow(0 0 8px rgba(100, 255, 218, 0.6));
     transform: scale(1.1);
 }
 
@@ -438,15 +432,15 @@ p code {
     background: var(--bg-panel);
     backdrop-filter: blur(20px);
     padding: 25px;
-    border-radius: 20px;
+    border-radius: 12px;
     margin-top: 30px;
-    border: 1px solid rgba(147, 51, 234, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .contact-info h3 {
     font-family: var(--font-heading);
-    color: var(--primary-purple);
+    color: var(--primary-blue);
     margin-top: 0;
     letter-spacing: 1px;
 }
@@ -460,7 +454,7 @@ p code {
         position: relative;
         width: 100%;
         height: auto;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
     
     #navbar ul {
@@ -502,21 +496,6 @@ p code {
     }
 
     .btn-icon {
-        font-size: 2em;
-    }
-}
-
-@keyframes cardPulse {
-    0%, 100% {
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        border-color: rgba(255, 255, 255, 0.05);
-    }
-    15% {
-        box-shadow: 0 4px 25px rgba(255, 255, 255, 0.1);
-        border-color: rgba(255, 255, 255, 0.15);
-    }
-    30% {
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        border-color: rgba(255, 255, 255, 0.05);
+        font-size: 1.8em;
     }
 }
