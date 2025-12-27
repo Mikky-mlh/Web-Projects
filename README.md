@@ -97,7 +97,7 @@ A futuristic quantum computer landing page with real form submission and advance
 **🎨 Tech Stack:**  
 HTML5 • CSS3 • JavaScript • FormSubmit API • Modals
 
-**📅 Completed:** December 24, 2025
+**📅 Completed:** December 25, 2025
 
 </td>
 <td width="50%">
@@ -113,11 +113,12 @@ A comprehensive documentation site with advanced navigation and modern layout sy
 - Syntax-highlighted code blocks
 - Complex CSS Grid layouts
 - Multi-section portfolio structure
+- DSA Journey section (50+ problems)
 
 **🎨 Tech Stack:**  
 HTML5 • CSS3 • Semantic Structure
 
-**📅 Completed:** December 15, 2025
+**📅 Completed:** December 15, 2025 • Updated: December 25, 2025
 
 </td>
 </tr>
@@ -163,11 +164,53 @@ HTML5 • CSS3 • Typography
 
 </td>
 </tr>
+<tr>
+<td width="50%">
+
+### 🎯 Personal Portfolio
+Professional portfolio showcasing all projects across multiple programming languages.
+
+**🔗 Links:** [Live Demo](https://mikky-mlh.github.io/Portfolio/) • [Source Code](https://github.com/Mikky-mlh/Portfolio)
+
+**✨ Key Features:**
+- Language-specific sections (Java, Python, C++, Web)
+- Responsive grid layout with project cards
+- Skills categorization and approach methodology
+- Contact section with multiple platforms
+- Professional footer with project links
+
+**🎨 Tech Stack:**  
+HTML5 • CSS3 • Font Awesome
+
+**📅 Completed:** December 25, 2025
+
+</td>
+<td width="50%">
+
+### 🌐 Web Projects Collection
+Main landing page showcasing all web development projects.
+
+**🔗 Links:** [Live Demo](https://mikky-mlh.github.io/Web-Projects/) • [Source Code](./index.html)
+
+**✨ Key Features:**
+- Project showcase with live links
+- freeCodeCamp certification badge
+- About me section with stats
+- Currently learning section
+- Responsive design
+
+**🎨 Tech Stack:**  
+HTML5 • CSS3 • Responsive Design
+
+**📅 Completed:** December 25, 2025
+
+</td>
+</tr>
 </table>
 
 ---
 
-## 🎯 What This Repo Demonstrates
+## 🎯 What This Demonstrates
 
 This repository showcases technical competencies across multiple domains:
 
@@ -225,7 +268,7 @@ As I progress through JavaScript, React, and backend development:
 **Certification Achievement:**
 - ✅ Completed all 15 curriculum modules
 - ✅ Passed certification exam
-- ✅ 4 portfolio-quality projects deployed
+- ✅ 5 portfolio-quality projects deployed
 - ✅ Ready for JavaScript phase
 
 ### 🚀 Milestone Timeline
@@ -238,7 +281,8 @@ As I progress through JavaScript, React, and backend development:
 | 📝 Survey Form Deployed | Nov 29, 2025 | ✅ |
 | 🏛️ Tribute Page Live | Dec 8, 2025 | ✅ |
 | 📚 Documentation Site Complete | Dec 15, 2025 | ✅ |
-| 🛍️ Product Landing Page | Dec 24, 2025 | ✅ |
+| 🛍️ Product Landing Page | Dec 25, 2025 | ✅ |
+| 🎯 Personal Portfolio | Dec 25, 2025 | ✅ |
 | 🎓 freeCodeCamp Certification | Dec 2025 | ✅ |
 | 💻 JavaScript Phase | Jan 2026 | 🔄 Next |
 
@@ -250,8 +294,8 @@ As I progress through JavaScript, React, and backend development:
 
 | Metric | Value |
 |:-------|:------|
-| ✅ Live Projects | 4 (and growing) |
-| 📝 Total Lines of Code | 3,500+ |
+| ✅ Live Projects | 5 (and growing) |
+| 📝 Total Lines of Code | 4,000+ |
 | 🎯 Current Focus | JavaScript Fundamentals |
 | 🚀 Next Phase | Interactive JS Projects |
 
@@ -334,7 +378,7 @@ open index.html
 
 ## 🎓 Recent Learnings
 
-### Product Landing Page (December 24, 2025)
+### Product Landing Page (December 25, 2025)
 
 **Technical Highlights:**
 - **Form Integration:** Configured FormSubmit.co for serverless form handling
@@ -469,6 +513,7 @@ git push origin main
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mikky-mlh)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/yuvraj-sarathe)
 [![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/Mikky_mlh/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live_Site-6366F1?style=for-the-badge&logo=google-chrome&logoColor=white)](https://mikky-mlh.github.io/Portfolio/)
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:yuvrajsarathe07@gmail.com)
 
 ### 💬 Open to Collaboration
@@ -511,7 +556,7 @@ git push origin main
 
 ⭐ **Star this repo if you appreciate quality over quantity**
 
-*Last Updated: December 2025*
+*Last Updated: December 25, 2025*
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer" />
 
