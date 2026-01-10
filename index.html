@@ -3,149 +3,220 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yuvraj Sarathe | Web Development Projects</title>
+        <title>Web Development Projects | Yuvraj Sarathe</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style-main.css"/>
-        </head>
+    </head>
     <body>
         <!-- Navigation -->
         <nav class="navbar">
             <div class="container nav-container">
-                <a href="#" class="nav-brand">Yuvraj Sarathe</a>
+                <a href="https://mikky-mlh.github.io/Portfolio/" class="nav-brand">
+                    <span class="brand-icon">⚡</span> Yuvraj Sarathe
+                </a>
                 <div class="nav-menu">
-                    <a href="#about" class="nav-link">About Me</a>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                    <a href="#projects" class="nav-link">Web Projects</a>
-                    <a href="#journey" class="nav-link">My Journey</a>
+                    <a href="#hero" class="nav-link">Home</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#roadmap" class="nav-link">Roadmap</a>
+                    <a href="#connect" class="nav-link">Connect</a>
                 </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
 
         <!-- Hero Section -->
-        <header id="about" class="hero">
-            <div class="container">
-                <h1 class="hero-title">Web Development Projects</h1>
-                <p class="hero-subtitle">freeCodeCamp Certified Developer</p>
-                <div class="cert-badge">
-                    <i class="fas fa-certificate"></i>
-                    Responsive Web Design Certification Completed
-                </div>
-                <p class="tagline">
-                    A growing collection of portfolio-quality web projects showcasing responsive design, 
-                    modern UI/UX, and practical development skills. Continuously adding new projects 
-                    as I expand my skills in web development.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View All Projects
-                    </a>
-                    <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank" class="btn btn-secondary">
-                        <i class="fab fa-github"></i> GitHub Repository
-                    </a>
-                    <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-user-circle"></i> View My Portfolio
-                    </a>
-                </div>
+        <header id="hero" class="hero">
+            <div class="hero-background">
+                <div class="hero-grid"></div>
+                <div class="hero-glow"></div>
             </div>
-        </header>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio" class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">About Me</h2>
-                    <p class="section-subtitle">Cyber Security Student & Developer from Bhopal, MP</p>
-                </div>
-                
-                <div class="about-content">
-                    <div>
-                        <p class="about-text">
-                            I'm a 1st-year B.Tech Cyber Security student at LNCT, Bhopal, building practical solutions through code. 
-                            I've completed the freeCodeCamp Responsive Web Design Certification and continue to expand my skills 
-                            through hands-on projects that bridge development skills with security principles.
-                        </p>
-                        <div class="about-stats">
-                            <div class="stat">
-                                <div class="stat-number">5+</div>
-                                <div class="stat-label">Web Projects</div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-group">
+                        <div class="badge certified">
+                            <i class="fab fa-free-code-camp"></i>
+                            <span>freeCodeCamp Certified</span>
+                        </div>
+                        <div class="badge">
+                            <span class="badge-dot"></span>
+                            <span>5 Production Sites</span>
+                        </div>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        <span class="hero-label">Web Development</span>
+                        <span class="hero-main">Projects</span>
+                    </h1>
+                    
+                    <p class="hero-tagline">
+                        <strong>Built to be used, not just viewed.</strong><br>
+                        Every project is fully responsive, deployed, and functional. Zero fluff.
+                    </p>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-globe"></i>
                             </div>
-                            <div class="stat">
-                                <div class="stat-number">4,000+</div>
-                                <div class="stat-label">Lines of Code</div>
+                            <div class="stat-info">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Live Sites</span>
                             </div>
-                            <div class="stat">
-                                <div class="stat-number">100%</div>
-                                <div class="stat-label">Certification</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">4,000+</span>
+                                <span class="stat-label">Lines of Code</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="stat-info">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Certification</span>
                             </div>
                         </div>
                     </div>
                     
-                    <div>
-                        <div class="info-card">
-                            <div class="info-header">
-                                <i class="fas fa-user-graduate"></i>
-                                <h3>Education</h3>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i> View Projects
+                        </a>
+                        <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> GitHub Repo
+                        </a>
+                        <a href="https://www.freecodecamp.org/certification/mikky-mlh/responsive-web-design" target="_blank" class="btn btn-outline">
+                            <i class="fas fa-award"></i> View Certificate
+                        </a>
+                    </div>
+
+                    <div class="tech-stack">
+                        <span class="tech-label">Built with:</span>
+                        <div class="tech-icons">
+                            <div class="tech-icon" data-tooltip="HTML5">
+                                <i class="fab fa-html5"></i>
                             </div>
-                            <div class="info-content">
-                                <p><strong>B.Tech Cyber Security</strong></p>
-                                <p>LNCT, Bhopal</p>
-                                <p class="info-note">First Year • 2025-2029</p>
+                            <div class="tech-icon" data-tooltip="CSS3">
+                                <i class="fab fa-css3-alt"></i>
                             </div>
-                        </div>
-                        
-                        <div class="info-card">
-                            <div class="info-header">
-                                <i class="fas fa-rocket"></i>
-                                <h3>Currently Learning</h3>
+                            <div class="tech-icon" data-tooltip="JavaScript">
+                                <i class="fab fa-js"></i>
                             </div>
-                            <div class="info-content">
-                                <div class="learning-stack">
-                                    <span class="stack-item">JavaScript</span>
-                                    <span class="stack-item">React.js</span>
-                                    <span class="stack-item">Data Structures</span>
-                                    <span class="stack-item">Web Security</span>
-                                </div>
+                            <div class="tech-icon" data-tooltip="GitHub Pages">
+                                <i class="fab fa-github"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+                <div class="hero-visual">
+                    <div class="browser-mockup">
+                        <div class="browser-header">
+                            <div class="browser-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="browser-url">
+                                <i class="fas fa-lock"></i>
+                                mikky-mlh.github.io/Web-Projects
+                            </div>
+                        </div>
+                        <div class="browser-content">
+                            <div class="project-preview">
+                                <div class="preview-nav"></div>
+                                <div class="preview-hero">
+                                    <div class="preview-title"></div>
+                                    <div class="preview-subtitle"></div>
+                                    <div class="preview-buttons">
+                                        <div class="preview-btn"></div>
+                                        <div class="preview-btn outlined"></div>
+                                    </div>
+                                </div>
+                                <div class="preview-cards">
+                                    <div class="preview-card"></div>
+                                    <div class="preview-card"></div>
+                                    <div class="preview-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-badges">
+                        <div class="floating-badge responsive">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive</span>
+                        </div>
+                        <div class="floating-badge deployed">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>Deployed</span>
+                        </div>
+                        <div class="floating-badge production">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Production Ready</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </header>
 
-        <!-- Web Projects Section -->
-        <section id="projects" class="section" style="background: var(--secondary-dark);">
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Featured Web Projects</h2>
-                    <p class="section-subtitle">A growing collection of responsive, production-ready web applications</p>
+                    <span class="section-tag">Live Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Portfolio-grade web applications, each solving a distinct design challenge</p>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Portfolio Project -->
-                    <div class="project-card">
-                        <div class="project-image">
+                    <!-- Personal Portfolio -->
+                    <article class="project-card featured">
+                        <div class="project-badge">
+                            <i class="fas fa-star"></i> Featured
+                        </div>
+                        <div class="project-image portfolio-gradient">
                             <i class="fas fa-user-circle"></i>
                         </div>
                         <div class="project-content">
                             <div class="project-meta">
-                                <span class="project-type">Professional Portfolio</span>
-                                <span class="project-year">2025</span>
+                                <span class="project-category">
+                                    <i class="fas fa-briefcase"></i> Professional Portfolio
+                                </span>
                             </div>
                             <h3 class="project-title">Personal Portfolio Website</h3>
                             <p class="project-description">
-                                A professional portfolio showcasing my journey in cybersecurity and web development. 
-                                Features dark theme design, project showcases, responsive layout, and detailed sections 
-                                about my skills, education, and development approach.
+                                A responsive, multi-language portfolio with modern dark theme. Features teal (#64ffda) 
+                                accent theme, responsive grid layouts, and skills visualization. Professional developer showcase.
                             </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Multi-section responsive design</li>
+                                <li><i class="fas fa-check"></i> Project categorization by language</li>
+                                <li><i class="fas fa-check"></i> Skills visualization</li>
+                            </ul>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
                                 <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">Responsive</span>
-                                <span class="tech-tag">Portfolio</span>
+                                <span class="tech-tag">Flexbox</span>
+                                <span class="tech-tag">Grid</span>
+                                <span class="tech-tag">Font Awesome</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="project-link">
+                                <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="project-link primary">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/Mikky-mlh/Portfolio" target="_blank" class="project-link">
@@ -153,32 +224,40 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 1: Product Landing Page -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-rocket"></i>
+                    <!-- Product Landing Page -->
+                    <article class="project-card">
+                        <div class="project-badge fcc">
+                            <i class="fab fa-free-code-camp"></i> freeCodeCamp
+                        </div>
+                        <div class="project-image landing-gradient">
+                            <i class="fas fa-atom"></i>
                         </div>
                         <div class="project-content">
                             <div class="project-meta">
-                                <span class="project-type">freeCodeCamp Project</span>
-                                <span class="project-year">2025</span>
+                                <span class="project-category">
+                                    <i class="fas fa-shopping-cart"></i> Product Landing
+                                </span>
                             </div>
-                            <h3 class="project-title">Product Landing Page</h3>
+                            <h3 class="project-title">Quantum Computer Landing</h3>
                             <p class="project-description">
-                                A futuristic quantum computer landing page featuring email capture forms, pricing tiers, 
-                                modal dialogs, and real form submission via FormSubmit.co. Includes smooth animations, 
-                                responsive design, and production-grade UX.
+                                A futuristic marketing page with real email capture and interactive elements. 
+                                Features working contact form via FormSubmit.co, interactive modals, and pricing cards.
                             </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Real form submission (FormSubmit.co)</li>
+                                <li><i class="fas fa-check"></i> Interactive modal dialogs</li>
+                                <li><i class="fas fa-check"></i> Pricing tier cards</li>
+                            </ul>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
                                 <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">Responsive Design</span>
-                                <span class="tech-tag">Form Handling</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">FormSubmit API</span>
                             </div>
                             <div class="project-links">
-                                <a href="Projects/Product%20Landing%20Page/" target="_blank" class="project-link">
+                                <a href="Projects/Product%20Landing%20Page/" target="_blank" class="project-link primary">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Product%20Landing%20Page" target="_blank" class="project-link">
@@ -186,32 +265,40 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 2: Technical Documentation -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-book"></i>
+                    <!-- Technical Documentation -->
+                    <article class="project-card">
+                        <div class="project-badge fcc">
+                            <i class="fab fa-free-code-camp"></i> freeCodeCamp
+                        </div>
+                        <div class="project-image docs-gradient">
+                            <i class="fas fa-book-open"></i>
                         </div>
                         <div class="project-content">
                             <div class="project-meta">
-                                <span class="project-type">freeCodeCamp Project</span>
-                                <span class="project-year">2025</span>
+                                <span class="project-category">
+                                    <i class="fas fa-file-alt"></i> Documentation
+                                </span>
                             </div>
                             <h3 class="project-title">Technical Documentation</h3>
                             <p class="project-description">
-                                A comprehensive technical documentation page acting as a portfolio, highlighting skills 
-                                in full-stack web design and system programming. Features fixed sidebar navigation, 
-                                smooth scroll behavior, and syntax-highlighted code blocks.
+                                A comprehensive documentation-style site with advanced navigation. Features fixed 
+                                sidebar, smooth scroll-behavior, and syntax-styled code blocks.
                             </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Fixed sidebar navigation</li>
+                                <li><i class="fas fa-check"></i> Syntax-highlighted code blocks</li>
+                                <li><i class="fas fa-check"></i> Smooth scroll behavior</li>
+                            </ul>
                             <div class="project-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Semantic HTML</span>
                                 <span class="tech-tag">CSS Grid</span>
-                                <span class="tech-tag">Navigation</span>
+                                <span class="tech-tag">CSS Variables</span>
+                                <span class="tech-tag">Accessibility</span>
                             </div>
                             <div class="project-links">
-                                <a href="Projects/Documentation%20Project/" target="_blank" class="project-link">
+                                <a href="Projects/Documentation%20Project/" target="_blank" class="project-link primary">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Documentation%20Project" target="_blank" class="project-link">
@@ -219,32 +306,40 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 3: Tribute Page -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-user-tie"></i>
+                    <!-- Tribute Page -->
+                    <article class="project-card">
+                        <div class="project-badge fcc">
+                            <i class="fab fa-free-code-camp"></i> freeCodeCamp
+                        </div>
+                        <div class="project-image tribute-gradient">
+                            <i class="fas fa-monument"></i>
                         </div>
                         <div class="project-content">
                             <div class="project-meta">
-                                <span class="project-type">freeCodeCamp Project</span>
-                                <span class="project-year">2025</span>
+                                <span class="project-category">
+                                    <i class="fas fa-history"></i> Tribute/Biography
+                                </span>
                             </div>
-                            <h3 class="project-title">Tribute Page</h3>
+                            <h3 class="project-title">Terry A. Davis Tribute</h3>
                             <p class="project-description">
-                                A tribute page dedicated to Terry A. Davis, detailing his incredible solo creation of HolyC, 
-                                TempleOS, its bootloader, compiler, and kernel. Features typography-focused design with 
-                                CSS gradient text effects and chronological timeline structure.
+                                A typography-focused timeline celebrating a programming pioneer. Features CSS 
+                                gradient text, image hover effects, and chronological storytelling.
                             </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> CSS gradient text effects</li>
+                                <li><i class="fas fa-check"></i> Image hover zoom animations</li>
+                                <li><i class="fas fa-check"></i> Chronological timeline structure</li>
+                            </ul>
                             <div class="project-tech">
                                 <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
                                 <span class="tech-tag">Typography</span>
-                                <span class="tech-tag">Timeline</span>
+                                <span class="tech-tag">CSS Gradients</span>
+                                <span class="tech-tag">Transitions</span>
                             </div>
                             <div class="project-links">
-                                <a href="Projects/Tribute%20Page/" target="_blank" class="project-link">
+                                <a href="Projects/Tribute%20Page/" target="_blank" class="project-link primary">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Tribute%20Page" target="_blank" class="project-link">
@@ -252,32 +347,40 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
 
-                    <!-- Project 4: Survey Form -->
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-poll"></i>
+                    <!-- Survey Form -->
+                    <article class="project-card">
+                        <div class="project-badge fcc">
+                            <i class="fab fa-free-code-camp"></i> freeCodeCamp
+                        </div>
+                        <div class="project-image survey-gradient">
+                            <i class="fas fa-clipboard-list"></i>
                         </div>
                         <div class="project-content">
                             <div class="project-meta">
-                                <span class="project-type">freeCodeCamp Project</span>
-                                <span class="project-year">2025</span>
+                                <span class="project-category">
+                                    <i class="fas fa-edit"></i> Form Design
+                                </span>
                             </div>
-                            <h3 class="project-title">Survey Form</h3>
+                            <h3 class="project-title">Glassmorphism Survey</h3>
                             <p class="project-description">
-                                A modern, responsive survey form featuring glassmorphism design with beautiful gradient 
-                                backgrounds and smooth animations. Built using HTML5 and CSS3 with FormSubmit.co integration 
-                                for real email submissions.
+                                A modern, aesthetic form with real submission capabilities. Features glassmorphism 
+                                design (backdrop-filter), full HTML5 validation, and thank-you page redirect.
                             </p>
+                            <ul class="project-features">
+                                <li><i class="fas fa-check"></i> Glassmorphism (backdrop-filter)</li>
+                                <li><i class="fas fa-check"></i> HTML5 form validation</li>
+                                <li><i class="fas fa-check"></i> Real email submission</li>
+                            </ul>
                             <div class="project-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">HTML5 Forms</span>
+                                <span class="tech-tag">Advanced CSS</span>
                                 <span class="tech-tag">Glassmorphism</span>
-                                <span class="tech-tag">Forms</span>
+                                <span class="tech-tag">FormSubmit.co</span>
                             </div>
                             <div class="project-links">
-                                <a href="Projects/Survey%20Form/" target="_blank" class="project-link">
+                                <a href="Projects/Survey%20Form/" target="_blank" class="project-link primary">
                                     <i class="fas fa-external-link-alt"></i> Live Demo
                                 </a>
                                 <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Survey%20Form" target="_blank" class="project-link">
@@ -285,76 +388,234 @@
                                 </a>
                             </div>
                         </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Arsenal</span>
+                    <h2 class="section-title">Skills & Technologies</h2>
+                    <p class="section-subtitle">Tools and technologies used across all projects</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Core Languages</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <i class="fab fa-js"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>CSS Techniques</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Flexbox</span>
+                            <span class="skill-tag">CSS Grid</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">CSS Variables</span>
+                            <span class="skill-tag">Animations</span>
+                            <span class="skill-tag">Glassmorphism</span>
+                            <span class="skill-tag">Gradients</span>
+                            <span class="skill-tag">Transitions</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Tools & Platforms</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">GitHub Pages</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">FormSubmit.co</span>
+                            <span class="skill-tag">Font Awesome</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Learning Journey Section -->
-        <section id="journey" class="section">
+        <!-- Roadmap Section -->
+        <section id="roadmap" class="section roadmap-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">My Web Development Journey</h2>
-                    <p class="section-subtitle">Completed certifications and ongoing project expansion</p>
+                    <span class="section-tag">Current Status</span>
+                    <h2 class="section-title">Development Roadmap</h2>
+                    <p class="section-subtitle">Where I am and where I'm heading</p>
                 </div>
-                
-                <div class="about-content">
-                    <div>
-                        <h3 style="margin-bottom: 1.5rem; color: var(--accent-blue);">Completed Certifications</h3>
-                        <div class="info-card" style="margin-bottom: 1.5rem;">
-                            <div class="info-header">
-                                <i class="fas fa-certificate" style="color: #f1c40f;"></i>
-                                <h3>freeCodeCamp Responsive Web Design</h3>
-                            </div>
-                            <div class="info-content">
-                                <p><strong>Status:</strong> Completed ✅</p>
-                                <p><strong>Projects Built:</strong> 5+ portfolio-grade applications</p>
-                                <p><strong>Skills:</strong> HTML5, CSS3, Responsive Design, Flexbox, CSS Grid</p>
-                            </div>
+
+                <div class="roadmap-grid">
+                    <div class="roadmap-card complete">
+                        <div class="roadmap-status">
+                            <span class="status-dot complete"></span>
+                            <span>Complete</span>
                         </div>
-                        
-                        <div class="info-card" style="margin-bottom: 1rem;">
-                            <div class="info-header">
-                                <i class="fas fa-check-circle"></i>
-                                <h3>Project Philosophy</h3>
-                            </div>
-                            <p>Every project is built to production-grade standards with real deployments and working features.</p>
+                        <div class="roadmap-icon">
+                            <i class="fas fa-mobile-alt"></i>
                         </div>
-                        
-                        <div class="info-card">
-                            <div class="info-header">
-                                <i class="fas fa-plus-circle"></i>
-                                <h3>Continuous Growth</h3>
-                            </div>
-                            <p>Regularly adding new projects as I expand into JavaScript, React, and backend development.</p>
+                        <h3>Responsive Design</h3>
+                        <p>All sites verified on Mobile, Tablet, and Desktop. freeCodeCamp certification completed.</p>
+                        <div class="roadmap-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-card in-progress">
+                        <div class="roadmap-status">
+                            <span class="status-dot in-progress"></span>
+                            <span>In Progress</span>
+                        </div>
+                        <div class="roadmap-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>Vanilla JavaScript</h3>
+                        <p>Refactoring older projects for deep interactivity. Adding dynamic features and DOM manipulation.</p>
+                        <div class="roadmap-progress">
+                            <div class="progress-bar" style="width: 45%"></div>
+                        </div>
+                    </div>
+
+                    <div class="roadmap-card planned">
+                        <div class="roadmap-status">
+                            <span class="status-dot planned"></span>
+                            <span>Planned</span>
+                        </div>
+                        <div class="roadmap-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Integration</h3>
+                        <p>Moving from FormSubmit.co to Node.js/Express. Building custom APIs and database connections.</p>
+                        <div class="roadmap-progress">
+                            <div class="progress-bar" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="milestone-timeline">
+                    <h3 class="timeline-title">Recent Milestones</h3>
+                    <div class="timeline-items">
+                        <div class="timeline-item">
+                            <span class="timeline-date">Nov 2025</span>
+                            <span class="timeline-text">Started Web Development journey</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Dec 2025</span>
+                            <span class="timeline-text">Completed all freeCodeCamp projects</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-date">Dec 2025</span>
+                            <span class="timeline-text">Built professional portfolio website</span>
+                        </div>
+                        <div class="timeline-item active">
+                            <span class="timeline-date">Now</span>
+                            <span class="timeline-text">Adding JavaScript interactivity</span>
+                        </div>
+                        <div class="timeline-item future">
+                            <span class="timeline-date">Next</span>
+                            <span class="timeline-text">React.js & Backend development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect Section -->
+        <section id="connect" class="section connect-section">
+            <div class="container">
+                <div class="connect-content">
+                    <div class="connect-text">
+                        <span class="section-tag">Let's Connect</span>
+                        <h2>Part of a Structured Journey<br>to Full-Stack Development</h2>
+                        <p>
+                            These web projects are part of my broader development journey as a 
+                            B.Tech Cyber Security student. I'm continuously learning and building.
+                        </p>
+                        <div class="connect-buttons">
+                            <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-user-circle"></i> Main Portfolio
+                            </a>
+                            <a href="https://github.com/Mikky-mlh" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-github"></i> GitHub Profile
+                            </a>
+                            <a href="mailto:yuvrajsarathe07@gmail.com" class="btn btn-outline">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
                         </div>
                     </div>
                     
-                    <div>
-                        <h3 style="margin-bottom: 1.5rem; color: var(--accent-blue);">Tech Stack & Skills</h3>
-                        
-                        <div class="learning-stack" style="margin-bottom: 2rem; justify-content: center;">
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">HTML5</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">CSS3</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">Flexbox</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">CSS Grid</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">Responsive Design</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">Git & GitHub</span>
-                            <span class="stack-item" style="font-size: 1rem; padding: 0.5rem 1rem;">GitHub Pages</span>
+                    <div class="connect-card">
+                        <div class="connect-profile">
+                            <div class="profile-avatar">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Yuvraj Sarathe</h3>
+                                <p>B.Tech Cyber Security Student</p>
+                                <p class="profile-location"><i class="fas fa-map-marker-alt"></i> LNCT, Bhopal</p>
+                            </div>
                         </div>
-                        
-                        <div class="info-card">
-                            <div class="info-header">
-                                <i class="fas fa-calendar-alt"></i>
-                                <h3>Recent Milestones</h3>
-                            </div>
-                            <div class="info-content">
-                                <p><strong>Nov 2025:</strong> Started Web Development journey</p>
-                                <p><strong>Dec 2025:</strong> Completed all freeCodeCamp projects</p>
-                                <p><strong>Dec 2025:</strong> Built professional portfolio website</p>
-                                <p><strong>Ongoing:</strong> Adding new projects regularly</p>
-                                <p><strong>Next:</strong> JavaScript and React.js projects</p>
-                            </div>
+                        <div class="connect-links">
+                            <a href="https://github.com/Mikky-mlh" target="_blank" class="connect-link">
+                                <i class="fab fa-github"></i>
+                                <span>Mikky-mlh</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" class="connect-link">
+                                <i class="fab fa-linkedin"></i>
+                                <span>yuvraj-sarathe</span>
+                            </a>
+                            <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" class="connect-link">
+                                <i class="fas fa-code"></i>
+                                <span>Mikky_mlh</span>
+                            </a>
+                            <a href="mailto:yuvrajsarathe07@gmail.com" class="connect-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>yuvrajsarathe07@gmail.com</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -364,15 +625,17 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="container">
-                <div class="footer-content">
-                    <div class="footer-about">
-                        <h3>Yuvraj Sarathe</h3>
-                        <p>Cyber Security Student & Developer</p>
-                        <p class="footer-location">Bhopal, Madhya Pradesh, India</p>
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <span class="brand-icon">⚡</span> Web Projects
+                        </a>
+                        <p>freeCodeCamp Certified • 5 Production Sites</p>
+                        <p class="footer-tagline">Built to be used, not just viewed.</p>
                     </div>
                     
-                    <div class="footer-links">
-                        <h4>Featured Projects</h4>
+                    <div class="footer-nav">
+                        <h4>Projects</h4>
                         <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank">Personal Portfolio</a>
                         <a href="Projects/Product%20Landing%20Page/" target="_blank">Product Landing Page</a>
                         <a href="Projects/Documentation%20Project/" target="_blank">Technical Documentation</a>
@@ -380,22 +643,45 @@
                         <a href="Projects/Survey%20Form/" target="_blank">Survey Form</a>
                     </div>
                     
-                    <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Quick Links</h4>
+                        <a href="#hero">Home</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#roadmap">Roadmap</a>
+                        <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank">GitHub Repo</a>
+                    </div>
+                    
+                    <div class="footer-social">
                         <h4>Connect</h4>
-                        <a href="https://github.com/Mikky-mlh" target="_blank">GitHub</a>
-                        <a href="https://github.com/Mikky-mlh/Portfolio" target="_blank">Portfolio Repo</a>
-                        <a href="https://github.com/Mikky-mlh/Web-Projects" target="_blank">Web Projects Repo</a>
-                        <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank">LinkedIn</a>
-                        <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank">LeetCode</a>
-                        <a href="mailto:yuvrajsarathe07@gmail.com">Email</a>
+                        <div class="social-icons">
+                            <a href="https://github.com/Mikky-mlh" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" aria-label="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="mailto:yuvrajsarathe07@gmail.com" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="footer-bottom">
-                    <p>&copy; 2025 Yuvraj Sarathe. This Web Projects showcase is built with HTML & CSS, deployed via GitHub Pages.</p>
-                    <p class="footer-update">freeCodeCamp Responsive Web Design Certified | Continuously adding new projects</p>
+                    <p>&copy; 2025 Yuvraj Sarathe. Built with HTML & CSS • Deployed via GitHub Pages</p>
                 </div>
             </div>
         </footer>
+
+        <!-- Back to Top -->
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+
+        <script src="script.js"></script>
     </body>
 </html>
