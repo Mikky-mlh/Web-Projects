@@ -3,512 +3,1266 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yuvraj Sarathe | Developer Documentation</title>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+        <title>Developer Documentation | Yuvraj Sarathe</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- Mobile Navigation Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-checkbox">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+        <!-- Sidebar Navigation -->
         <nav id="navbar">
-            <header>Yuvraj's Docs</header>
-            <ul>
-                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-                <li><a class="nav-link" href="#Web_Development">Web Development</a></li>
-                <li><a class="nav-link" href="#Java_Development">Java Development</a></li>
-                <li><a class="nav-link" href="#Python_Projects">Python Projects</a></li>
-                <li><a class="nav-link" href="#C++_Programming">C++ Programming</a></li>
-                <li><a class="nav-link" href="#DSA_Journey">DSA Journey</a></li>
-                <li><a class="nav-link" href="#Skills_&_Tech_Stack">Skills & Tech Stack</a></li>
-                <li><a class="nav-link" href="#Connect_With_Me">Connect With Me</a></li>
-            </ul>
-        </nav>
-        <main id="main-doc">
+            <div class="nav-header">
+                <a href="https://mikky-mlh.github.io/Portfolio/" class="nav-brand">
+                    <span class="brand-icon">⚡</span>
+                    <span class="brand-text">Yuvraj's Docs</span>
+                </a>
+                <div class="nav-badge">v2.0</div>
+            </div>
             
+            <div class="nav-search">
+                <i class="fas fa-search"></i>
+                <span>Quick Navigation</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li>
+                    <a class="nav-link" href="#Introduction">
+                        <i class="fas fa-home"></i>
+                        <span>Introduction</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Hackathon_Projects">
+                        <i class="fas fa-trophy"></i>
+                        <span>Hackathon Projects</span>
+                        <span class="nav-tag live">LIVE</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Web_Development">
+                        <i class="fas fa-globe"></i>
+                        <span>Web Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Java_Development">
+                        <i class="fab fa-java"></i>
+                        <span>Java Development</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Python_Projects">
+                        <i class="fab fa-python"></i>
+                        <span>Python Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#CPP_Programming">
+                        <i class="fas fa-code"></i>
+                        <span>C++ Programming</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#DSA_Journey">
+                        <i class="fas fa-chart-line"></i>
+                        <span>DSA Journey</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Skills_Tech_Stack">
+                        <i class="fas fa-tools"></i>
+                        <span>Skills & Tech</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Connect">
+                        <i class="fas fa-envelope"></i>
+                        <span>Connect</span>
+                    </a>
+                </li>
+            </ul>
+            
+            <div class="nav-footer">
+                <div class="nav-stats">
+                    <div class="nav-stat">
+                        <span class="stat-value">6+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="nav-stat">
+                        <span class="stat-value">59+</span>
+                        <span class="stat-label">DSA Solves</span>
+                    </div>
+                </div>
+                <div class="nav-social">
+                    <a href="https://github.com/Mikky-mlh" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" aria-label="LeetCode">
+                        <i class="fas fa-code"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main id="main-doc">
+            <!-- Introduction Section -->
             <section class="main-section" id="Introduction">
-                <header>Introduction</header>
-                <article>
-                    <p>
-                        Hello, I'm <strong>Yuvraj Sarathe</strong> (Mikky-mlh). I am a 1st-year B.Tech Cyber Security student at LNCT, Bhopal, building practical solutions through code.
-                    </p>
-                    <p>
-                        This documentation serves as a comprehensive technical portfolio showcasing my journey through Full Stack Development, Systems Programming, and Algorithmic Problem Solving. Currently focused on web development foundations and data structures & algorithms.
-                    </p>
-                    <ul>
-                        <li><strong>Languages:</strong> Java, Python, C++, HTML5, CSS3, JavaScript</li>
-                        <li><strong>Focus:</strong> Web Development, DSA, Game Logic, Production-Ready Applications</li>
-                        <li><strong>Current Phase:</strong> JavaScript fundamentals & Advanced DSA patterns</li>
-                    </ul>
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Introduction</h1>
+                        <p class="section-subtitle">Polyglot Developer • Production-First Mindset</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <div class="intro-hero">
+                        <div class="intro-text">
+                            <p class="intro-greeting">Hello, I'm</p>
+                            <h2 class="intro-name">Yuvraj Sarathe</h2>
+                            <p class="intro-tagline">
+                                <strong>Most developers write code. I ship software.</strong>
+                            </p>
+                        </div>
+                        <div class="intro-badges">
+                            <span class="intro-badge">
+                                <i class="fas fa-shield-alt"></i> Cyber Security Student
+                            </span>
+                            <span class="intro-badge">
+                                <i class="fas fa-graduation-cap"></i> LNCT, Bhopal
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="intro-description">
+                        <p>
+                            I'm a B.Tech Cyber Security student with a <strong>production-first mindset</strong>. 
+                            I eliminate "setup hell" by packaging every project for immediate execution—bundled JREs for Java, 
+                            standalone binaries for Python, and zero-dependency web deployments.
+                        </p>
+                        <p>
+                            This documentation showcases my journey as a <strong>Polyglot Developer</strong> across Java, Python, 
+                            C++, and Web Development, emphasizing pattern-based learning, efficiency obsession, and cyber security awareness.
+                        </p>
+                    </div>
+
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Languages</h3>
+                            <p>Java, Python, C++, HTML5, CSS3, JavaScript</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Philosophy</h3>
+                            <p>Patterns are learned, not discovered • Production-ready • Security-first</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3>Current Focus</h3>
+                            <p>JavaScript Deep-Dive & Advanced DSA (Recursion, Hashing)</p>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <h3>Roadmap</h3>
+                            <p>Q1 2026: JS Mastery • Q2 2026: Flask/SQL • 2027: React/Cloud</p>
+                        </div>
+                    </div>
                 </article>
             </section>
 
+            <!-- Hackathon Projects Section -->
+            <section class="main-section" id="Hackathon_Projects">
+                <div class="section-header">
+                    <div class="section-icon hackathon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Hackathon Projects</h1>
+                        <p class="section-subtitle">AI-Powered • Live Deployed • Production Ready</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        My hackathon projects demonstrate rapid prototyping skills and AI integration capabilities, 
+                        showcasing the ability to build production-ready applications under time constraints with modern tech stacks.
+                    </p>
+
+                    <div class="project-card featured">
+                        <div class="project-status">
+                            <span class="status-badge live">
+                                <span class="pulse"></span> LIVE
+                            </span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon unisync">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>UniSync</h3>
+                                <p>Campus Ecosystem Platform</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                A comprehensive campus ecosystem platform that revolutionizes student networking and academic 
+                                collaboration through AI-powered peer matching and intelligent recommendations.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Gemini AI</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>AI-powered peer matching based on academic interests</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Campus event discovery and networking</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Study group formation with compatibility algorithms</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Personalized course recommendations</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://unisync.streamlit.app/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card featured">
+                        <div class="project-status">
+                            <span class="status-badge live">
+                                <span class="pulse"></span> LIVE
+                            </span>
+                        </div>
+                        <div class="project-header">
+                            <div class="project-icon neuralplan">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>NeuralPlan</h3>
+                                <p>Intelligent Study Planner</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                An advanced study planning application that combines vision OCR technology with energy-adaptive 
+                                scheduling to create personalized, efficient study plans tailored to individual learning patterns.
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Gemini AI</span>
+                                <span class="tech-tag">Vision OCR</span>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Document scanning with Vision OCR</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Energy-adaptive scheduling</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>AI-generated study plans</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Progress tracking and adaptive adjustments</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://neuralplan.streamlit.app/" target="_blank" class="project-link primary">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="callout">
+                        <div class="callout-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="callout-content">
+                            <h4>Hackathon Philosophy</h4>
+                            <p>
+                                Rapid prototyping with production-grade deployment. Both projects demonstrate the ability to integrate 
+                                cutting-edge AI technologies with user-friendly interfaces, delivering functional solutions within tight deadlines.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Web Development Section -->
             <section class="main-section" id="Web_Development">
-                <header>Web Development</header>
-                <article>
-                    <p>My web development journey focuses on semantic HTML5 and modern CSS3, emphasizing responsive design and modern aesthetics. All projects are part of my freeCodeCamp Responsive Web Design certification path.</p>
+                <div class="section-header">
+                    <div class="section-icon web">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Web Development</h1>
+                        <p class="section-subtitle">freeCodeCamp Certified • Responsive Design</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        My web development journey focuses on semantic HTML5 and modern CSS3, emphasizing responsive design 
+                        and modern aesthetics. All projects are part of my freeCodeCamp Responsive Web Design certification path.
+                    </p>
+
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon portfolio">
+                                    <i class="fas fa-user-circle"></i>
+                                </div>
+                                <div class="project-title-wrap">
+                                    <h3>Personal Portfolio</h3>
+                                    <span class="project-date">Dec 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Professional portfolio showcasing all projects across multiple programming languages with language-based categorization.</p>
+                                <div class="feature-list compact">
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Multi-language project sections</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Responsive grid layout</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Skills visualization</span></div>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> View
+                                </a>
+                                <a href="https://github.com/Mikky-mlh/Portfolio" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon landing">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <div class="project-title-wrap">
+                                    <h3>Product Landing Page</h3>
+                                    <span class="project-date">Dec 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Futuristic quantum computer landing page with real form submission and modal dialogs.</p>
+                                <div class="feature-list compact">
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Real email capture (FormSubmit.co)</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Modal dialogs with JavaScript</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Pricing comparison table</span></div>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Product%20Landing%20Page/" target="_blank" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> View
+                                </a>
+                                <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Product%20Landing%20Page" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon docs">
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <div class="project-title-wrap">
+                                    <h3>Technical Documentation</h3>
+                                    <span class="project-date">Dec 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>This very page! Comprehensive developer documentation showcasing my technical portfolio.</p>
+                                <div class="feature-list compact">
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Fixed sidebar navigation</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Syntax-highlighted code blocks</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Responsive design</span></div>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <span class="project-link current">
+                                    <i class="fas fa-eye"></i> You're here!
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon tribute">
+                                    <i class="fas fa-monument"></i>
+                                </div>
+                                <div class="project-title-wrap">
+                                    <h3>Tribute Page</h3>
+                                    <span class="project-date">Dec 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>A tribute to Terry A. Davis with typography-focused design and timeline structure.</p>
+                                <div class="feature-list compact">
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>CSS gradient text effects</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Image hover animations</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Chronological timeline</span></div>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Tribute%20Page/" target="_blank" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> View
+                                </a>
+                                <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Tribute%20Page" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-header">
+                                <div class="project-icon survey">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <div class="project-title-wrap">
+                                    <h3>Survey Form</h3>
+                                    <span class="project-date">Nov 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-body">
+                                <p>Modern glassmorphism survey form with gradient backgrounds and smooth animations.</p>
+                                <div class="feature-list compact">
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Glassmorphism UI</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>HTML5 validation</span></div>
+                                    <div class="feature-item"><i class="fas fa-check"></i><span>Custom styled elements</span></div>
+                                </div>
+                            </div>
+                            <div class="project-footer">
+                                <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Survey%20Form/" target="_blank" class="project-link primary">
+                                    <i class="fas fa-external-link-alt"></i> View
+                                </a>
+                                <a href="https://github.com/Mikky-mlh/Web-Projects/tree/main/Projects/Survey%20Form" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">
+                        <i class="fas fa-palette"></i> CSS Techniques Mastered
+                    </h3>
                     
-                    <div class="project-showcase">
-                        <h3>🎨 Survey Form</h3>
-                        <p><strong>Status:</strong> ✅ Completed & Deployed (Nov 29, 2025)</p>
-                        <p>A modern, responsive survey form featuring glassmorphism design with beautiful gradient backgrounds and smooth animations.</p>
-                        <p><strong>Key Features:</strong></p>
-                        <ul>
-                            <li>Glassmorphism UI with backdrop blur effects</li>
-                            <li>Beautiful gradient backgrounds (purple to pink spectrum)</li>
-                            <li>HTML5 form validation with visual feedback</li>
-                            <li>Custom styled form elements with smooth transitions</li>
-                            <li>Mobile-first responsive design</li>
-                        </ul>
-                        <p><strong>Live Demo:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Survey%20Form/" target="_blank">View Project</a></p>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">CSS / JavaScript</span>
+                            <span class="code-file">techniques.css</span>
+                        </div>
+                        <pre><code><span class="comment">/* Glassmorphism Effect */</span>
+<span class="selector">.card</span> {
+    <span class="property">background</span>: <span class="value">rgba(255, 255, 255, 0.25)</span>;
+    <span class="property">backdrop-filter</span>: <span class="value">blur(4px)</span>;
+    <span class="property">border</span>: <span class="value">1px solid rgba(255, 255, 255, 0.18)</span>;
+    <span class="property">border-radius</span>: <span class="value">10px</span>;
+}
+
+<span class="comment">/* Gradient Text */</span>
+<span class="selector">.highlight</span> {
+    <span class="property">background</span>: <span class="value">linear-gradient(120deg, #6366f1, #a855f7)</span>;
+    <span class="property">background-clip</span>: <span class="value">text</span>;
+    <span class="property">-webkit-background-clip</span>: <span class="value">text</span>;
+    <span class="property">-webkit-text-fill-color</span>: <span class="value">transparent</span>;
+}
+
+<span class="comment">/* Modal Dialog System */</span>
+<span class="keyword">function</span> <span class="function">openModal</span>(modalId) {
+    document.<span class="function">getElementById</span>(modalId).style.display = <span class="string">'flex'</span>;
+    document.body.style.overflow = <span class="string">'hidden'</span>;
+}</code></pre>
                     </div>
 
-                    <div class="project-showcase">
-                        <h3>📖 Tribute Page - Terry A. Davis</h3>
-                        <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 8, 2025)</p>
-                        <p>A comprehensive tribute honoring Terry A. Davis, the brilliant programmer who single-handedly created HolyC, TempleOS, its compiler, kernel, and bootloader.</p>
-                        <p><strong>Key Features:</strong></p>
-                        <ul>
-                            <li>Responsive timeline design using modern CSS</li>
-                            <li>Professional typography and spacing</li>
-                            <li>Gradient text effects and smooth hover transitions</li>
-                            <li>Multiple images with zoom effects</li>
-                            <li>Semantic HTML5 structure for accessibility</li>
-                        </ul>
-                        <p><strong>Live Demo:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Tribute%20Page/" target="_blank">View Project</a></p>
+                    <div class="link-cards">
+                        <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" class="link-card">
+                            <i class="fas fa-folder-open"></i>
+                            <div>
+                                <strong>Web Projects Collection</strong>
+                                <span>mikky-mlh.github.io/Web-Projects</span>
+                            </div>
+                        </a>
+                        <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="link-card">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <strong>Personal Portfolio</strong>
+                                <span>mikky-mlh.github.io/Portfolio</span>
+                            </div>
+                        </a>
                     </div>
-
-                    <div class="project-showcase">
-                        <h3>📚 Technical Documentation Page</h3>
-                        <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 15, 2025)</p>
-                        <p>This very page you're reading! A comprehensive developer documentation showcasing my technical portfolio with modern design principles.</p>
-                    </div>
-
-                    <div class="project-showcase">
-                        <h3>🛍️ Product Landing Page - Zenith G1</h3>
-                        <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 25, 2025)</p>
-                        <p>A futuristic quantum computer landing page with real form submission, modal dialogs, pricing tiers, and production-grade email integration via FormSubmit.co. Most advanced project demonstrating JavaScript proficiency.</p>
-                        <p><strong>Key Features:</strong></p>
-                        <ul>
-                            <li>Hero section with email capture form (real submission to inbox)</li>
-                            <li>Feature showcase cards with gradient hover effects</li>
-                            <li>Image gallery with overlay animations</li>
-                            <li>Pricing comparison table (3 tiers with featured highlighting)</li>
-                            <li>Modal dialogs (Privacy, Terms, Contact) with JavaScript</li>
-                            <li>Smooth scroll to email input from pricing buttons</li>
-                            <li>Thank-you page with auto-redirect</li>
-                            <li>Custom JavaScript for DOM manipulation and event handling</li>
-                        </ul>
-                        <p><strong>Live Demo:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/Projects/Product%20Landing%20Page/" target="_blank">View Project</a></p>
-                    </div>
-
-                    <div class="project-showcase">
-                        <h3>🎯 Personal Portfolio Website</h3>
-                        <p><strong>Status:</strong> ✅ Completed & Deployed (Dec 25, 2025)</p>
-                        <p>Professional portfolio showcasing all projects across multiple programming languages with language-based categorization and modern UI design.</p>
-                        <p><strong>Key Features:</strong></p>
-                        <ul>
-                            <li>Language-specific sections (Java, Python, C++, Web)</li>
-                            <li>Responsive grid layout with project cards</li>
-                            <li>Font Awesome icons for visual hierarchy</li>
-                            <li>Skills categorization and approach methodology</li>
-                            <li>Contact section with multiple platforms</li>
-                            <li>Professional footer with project links</li>
-                        </ul>
-                        <p><strong>Live Demo:</strong> <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank">View Portfolio</a></p>
-                    </div>
-
-                    <p><strong>Web Projects Collection:</strong> <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank">https://mikky-mlh.github.io/Web-Projects/</a></p>
-                    <p><strong>Personal Portfolio:</strong> <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank">https://mikky-mlh.github.io/Portfolio/</a></p>
-
-                    <h3>CSS Techniques Mastered</h3>
-                    <code>/* Glassmorphism Effect */
-    .card {
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(4px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        border-radius: 10px;
-    }
-
-    /* Gradient Text */
-    .highlight {
-        background: linear-gradient(120deg, #ffd89b 0%, #19547b 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    /* Modal Dialog System */
-    function openModal(modalId) {
-        document.getElementById(modalId).style.display = 'flex';
-        document.body.style.overflow = 'hidden';
-    }
-
-    /* Smooth Scroll with Focus */
-    document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
-    setTimeout(() => emailInput.focus(), 500);</code>
                 </article>
             </section>
 
+            <!-- Java Development Section -->
             <section class="main-section" id="Java_Development">
-                <header>Java Development</header>
-                <article>
-                    <p>I focus on object-oriented programming and console-based interactivity in Java, creating engaging terminal applications with advanced features.</p>
-                    
-                    <div class="project-showcase">
-                        <h3>🎮 Hangman in Java</h3>
-                        <p>A feature-complete console game that stands out from standard text games by utilizing <strong>ANSI escape codes</strong> to render colored text and ASCII graphics directly in the terminal.</p>
-                        
-                        <p><strong>Technical Highlights:</strong></p>
-                        <ul>
-                            <li><strong>Zero Dependencies:</strong> Runs on standard JDK 14+ with no external libraries</li>
-                            <li><strong>ANSI Color Support:</strong> Dynamic colored output for enhanced user experience</li>
-                            <li><strong>ASCII Art:</strong> Progressive hangman drawing with each incorrect guess</li>
-                            <li><strong>2000+ Word Database:</strong> Built-in word list for varied gameplay</li>
-                            <li><strong>Resource Management:</strong> Efficient file reading using InputStream</li>
-                            <li><strong>Windows Executable:</strong> Packaged with jpackage for no-dependency distribution</li>
-                        </ul>
+                <div class="section-header">
+                    <div class="section-icon java">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Java Development</h1>
+                        <p class="section-subtitle">Production-Ready Executables • Zero Dependencies</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        I focus on object-oriented programming and console-based interactivity in Java, 
+                        creating engaging terminal applications with advanced features and <strong>production-ready packaging</strong>.
+                    </p>
 
-                        <p><strong>Build System:</strong></p>
-                        <ul>
-                            <li>Custom <code>build.bat</code> script for automated compilation</li>
-                            <li>JAR packaging with embedded resources</li>
-                            <li>jpackage integration for native Windows executable</li>
-                        </ul>
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-icon java-game">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>Hangman in Java</h3>
+                                <p>Console Game with Bundled JRE</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                A feature-complete console game demonstrating <strong>production-ready packaging</strong> 
+                                with zero-friction execution.
+                            </p>
 
-                        <p><strong>Game Features:</strong></p>
-                        <ul>
-                            <li>Color-coded feedback (Green for correct, Red for incorrect)</li>
-                            <li>Used letters tracking to prevent duplicate guesses</li>
-                            <li>Centered text display for professional appearance</li>
-                            <li>Play again functionality for continuous gameplay</li>
-                        </ul>
+                            <div class="callout production">
+                                <div class="callout-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="callout-content">
+                                    <h4>The Production-First Difference</h4>
+                                    <p>Single .exe with embedded Java runtime—no installation required on user machines.</p>
+                                </div>
+                            </div>
 
-                        <p><strong>Repository:</strong> <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank">View on GitHub</a></p>
+                            <div class="feature-grid">
+                                <div class="feature-box">
+                                    <i class="fas fa-cube"></i>
+                                    <h4>Bundled JRE</h4>
+                                    <p>Zero-dependency .exe distribution</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-palette"></i>
+                                    <h4>ANSI Colors</h4>
+                                    <p>Dynamic colored console output</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-database"></i>
+                                    <h4>2000+ Words</h4>
+                                    <p>Built-in word database</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-cog"></i>
+                                    <h4>jpackage</h4>
+                                    <p>Native Windows executable</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Mikky-mlh/Hangman-in-Java" target="_blank" class="project-link primary">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
                     </div>
 
-                    <h3>Code Architecture</h3>
-                    <code>// Console Color Implementation
-    public class Hangman {
-        // ANSI Color Codes
-        public static final String RED = "\u001B[31m";
-        public static final String GREEN = "\u001B[32m";
-        public static final String YELLOW = "\u001B[33m";
-        public static final String CYAN = "\u001B[36m";
-        public static final String RESET = "\u001B[0m";
-        
-        // Nested class for word management
-        public static class WordReader {
-            public static String getRandomWordFromFile(String filename) 
-                throws IOException {
-                // Resource loading from JAR
-                try (InputStream is = 
-                    Hangman.class.getResourceAsStream("/" + filename)) {
-                    // Stream processing for efficiency
-                }
+                    <h3 class="subsection-title">
+                        <i class="fas fa-code"></i> Code Architecture
+                    </h3>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">Java</span>
+                            <span class="code-file">Hangman.java</span>
+                        </div>
+                        <pre><code><span class="comment">// Console Color Implementation</span>
+<span class="keyword">public class</span> <span class="class">Hangman</span> {
+    <span class="comment">// ANSI Color Codes</span>
+    <span class="keyword">public static final</span> String RED = <span class="string">"\u001B[31m"</span>;
+    <span class="keyword">public static final</span> String GREEN = <span class="string">"\u001B[32m"</span>;
+    <span class="keyword">public static final</span> String YELLOW = <span class="string">"\u001B[33m"</span>;
+    <span class="keyword">public static final</span> String CYAN = <span class="string">"\u001B[36m"</span>;
+    <span class="keyword">public static final</span> String RESET = <span class="string">"\u001B[0m"</span>;
+    
+    <span class="comment">// Nested class for word management</span>
+    <span class="keyword">public static class</span> <span class="class">WordReader</span> {
+        <span class="keyword">public static</span> String <span class="function">getRandomWordFromFile</span>(String filename) 
+            <span class="keyword">throws</span> IOException {
+            <span class="comment">// Resource loading from JAR</span>
+            <span class="keyword">try</span> (InputStream is = 
+                Hangman.<span class="keyword">class</span>.<span class="function">getResourceAsStream</span>(<span class="string">"/"</span> + filename)) {
+                <span class="comment">// Stream processing for efficiency</span>
             }
         }
-    }</code>
-                </article>
-            </section>
-
-            <section class="main-section" id="Python_Projects">
-                <header>Python Projects</header>
-                <article>
-                    <p>Python is my go-to language for logic puzzles, game development, and rapid application development. I leverage libraries like Pygame, NumPy, and Tkinter for interactive applications.</p>
-
-                    <div class="project-showcase">
-                        <h3>🔴 Connect4 Game</h3>
-                        <p>A fully-featured graphical implementation of the classic Connect 4 board game using <strong>Pygame</strong> and <strong>NumPy</strong> for efficient matrix operations.</p>
-                        
-                        <p><strong>Technical Implementation:</strong></p>
-                        <ul>
-                            <li><strong>NumPy Arrays:</strong> Efficient 6x7 matrix representation for game board</li>
-                            <li><strong>Pygame Graphics:</strong> Real-time rendering with smooth animations</li>
-                            <li><strong>Dynamic Sizing:</strong> Automatically adapts to screen resolution</li>
-                            <li><strong>Player Name Input:</strong> Custom keyboard input system for personalization</li>
-                            <li><strong>Win Detection:</strong> Optimized algorithm checking all 4 directions (horizontal, vertical, both diagonals)</li>
-                            <li><strong>Draw Detection:</strong> Automatic tie game recognition when board is full</li>
-                        </ul>
-
-                        <p><strong>Game Features:</strong></p>
-                        <ul>
-                            <li>Two-player mode with custom names</li>
-                            <li>Hovering piece preview before placement</li>
-                            <li>Color-coded players (Red vs Yellow)</li>
-                            <li>Restart functionality with green button</li>
-                            <li>Winner announcement with player name</li>
-                        </ul>
-
-                        <p><strong>Repository:</strong> <a href="https://github.com/Mikky-mlh/Connect4-in-Python" target="_blank">View on GitHub</a></p>
-                    </div>
-
-                    <div class="project-showcase">
-                        <h3>🎲 Guess The Number Game</h3>
-                        <p>My first mini-project utilizing <strong>Tkinter</strong> for a Graphical User Interface, marking my transition from command-line to GUI applications.</p>
-                        
-                        <p><strong>Features:</strong></p>
-                        <ul>
-                            <li><strong>Tkinter GUI:</strong> Clean, modern interface with custom styling</li>
-                            <li><strong>Input Validation:</strong> Handles invalid inputs gracefully</li>
-                            <li><strong>Smart Feedback:</strong> Color-coded hints (Too high/low in orange, success in green)</li>
-                            <li><strong>Guess Counter:</strong> Tracks number of attempts</li>
-                            <li><strong>Play Again:</strong> Restart button appears after winning</li>
-                            <li><strong>Range Validation:</strong> Ensures guesses are between 1-100</li>
-                        </ul>
-
-                        <p><strong>Repository:</strong> <a href="https://github.com/Mikky-mlh/GuessTheNumberGame" target="_blank">View on GitHub</a></p>
-                    </div>
-
-                    <h3>Algorithm Example: Connect4 Win Detection</h3>
-                    <code># Optimized win detection using direction vectors
-    def winning_move(board, piece):
-        # Check all possible winning locations
-        # Directions: horizontal, vertical, positive diagonal, negative diagonal
-        directions = [(0, 1), (1, 0), (1, 1), (1, -1)]
-        
-        for r_start in range(ROW_COUNT):
-            for c_start in range(COLUMN_COUNT):
-                for dr, dc in directions:
-                    # Check if 4 consecutive pieces exist
-                    if 0 <= r_start + 3*dr < ROW_COUNT and \
-                    0 <= c_start + 3*dc < COLUMN_COUNT:
-                        if all(board[r_start + i*dr][c_start + i*dc] == piece 
-                            for i in range(4)):
-                            return True
-        return False</code>
-                </article>
-            </section>
-
-            <section class="main-section" id="DSA_Journey">
-                <header>DSA Journey</header>
-                <article>
-                    <p>Following Striver's A2Z DSA Course with a pattern-first learning approach. Focus on understanding algorithmic patterns and time-space complexity analysis rather than memorizing solutions.</p>
-                    
-                    <div class="project-showcase">
-                        <h3>📊 Current Progress</h3>
-                        <p><strong>Total Problems Solved:</strong> 50+ unique problems</p>
-                        <p><strong>LeetCode Stats:</strong> 26 problems (19 Easy, 7 Medium) • 64.52% acceptance rate</p>
-                        <p><strong>Language:</strong> Java (Collections Framework mastery)</p>
-                        
-                        <p><strong>Completed Sections:</strong></p>
-                        <ul>
-                            <li><strong>Patterns (17 problems):</strong> Nested loops, space calculation, mathematical formulas</li>
-                            <li><strong>Basic Maths (31 problems):</strong> Array operations, divisors, HCF/LCM, modulus manipulation, sieve algorithms</li>
-                            <li><strong>Java Collections:</strong> ArrayList, Stack, Queue, HashSet, HashMap, TreeMap, Comparators</li>
-                        </ul>
-                        
-                        <p><strong>Current Focus:</strong> Basic Recursion section</p>
-                        <p><strong>Repository:</strong> <a href="https://github.com/Mikky-mlh/DSA-in-Java" target="_blank">View on GitHub</a></p>
-                    </div>
-
-                    <h3>Learning Approach</h3>
-                    <code>// Pattern-First Learning Method
-    1. Watch Striver's video for problem pattern (5-15 min)
-    2. Understand the pattern/approach explained
-    3. Attempt problem applying that pattern
-    4. If stuck, look at editorial
-    5. Re-implement independently
-
-    // Multiple Solutions Per Problem
-    - Solve with brute force first
-    - Analyze time-space complexity
-    - Optimize using learned patterns
-    - Compare approaches
-
-    // Example: Contains Duplicate
-    Solution 1: HashSet with contains() - O(n) time, O(n) space
-    Solution 2: Sort then check adjacent - O(n log n), marked "BAD BECAUSE SLOW"
-    Solution 3: HashSet using add() return value - O(n), marked "Good optimization"</code>
-
-                    <h3>Key Patterns Mastered</h3>
-                    <ul>
-                        <li><strong>Integer Manipulation:</strong> n % 10 (last digit), n / 10 (remove last digit)</li>
-                        <li><strong>Square Root Optimization:</strong> O(√n) for divisor problems</li>
-                        <li><strong>Two-Pointer Technique:</strong> Efficient array traversal</li>
-                        <li><strong>Modular Arithmetic:</strong> Avoiding overflow in calculations</li>
-                        <li><strong>Sieve of Eratosthenes:</strong> Prime number generation</li>
-                        <li><strong>Cycle Detection:</strong> Using HashSet or mathematical properties</li>
-                        <li><strong>Space-Time Tradeoffs:</strong> O(n) space vs O(1) space solutions</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="main-section" id="C++_Programming">
-                <header>C++ Programming</header>
-                <article>
-                    <p>I use C++ to understand low-level memory management, game logic loops, and systems programming. My focus is on creating engaging console applications with advanced terminal features.</p>
-                    
-                    <div class="project-showcase">
-                        <h3>❌⭕ Tic-Tac-Toe in C++</h3>
-                        <p>A console-based implementation of Tic-Tac-Toe featuring Windows console color manipulation and clean game architecture.</p>
-                        
-                        <p><strong>Technical Features:</strong></p>
-                        <ul>
-                            <li><strong>Windows Console API:</strong> Uses <code>windows.h</code> for color manipulation</li>
-                            <li><strong>SetConsoleTextAttribute:</strong> Dynamic color changes for enhanced UX</li>
-                            <li><strong>Screen Management:</strong> Clear screen functionality for clean display</li>
-                            <li><strong>Color-Coded Gameplay:</strong> Green for player X, Red for computer O</li>
-                            <li><strong>Smart AI:</strong> Random computer moves with validation</li>
-                            <li><strong>Input Validation:</strong> Prevents invalid moves and occupied spaces</li>
-                        </ul>
-
-                        <p><strong>Game Features:</strong></p>
-                        <ul>
-                            <li>Player vs Computer gameplay</li>
-                            <li>Visual 3x3 grid with position numbers</li>
-                            <li>Win detection for all 8 possible winning combinations</li>
-                            <li>Tie game detection</li>
-                            <li>Play again functionality</li>
-                            <li>Color-coded win/lose messages</li>
-                        </ul>
-
-                        <p><strong>Code Structure:</strong></p>
-                        <ul>
-                            <li><code>drawBoard()</code> - Renders the game grid with colors</li>
-                            <li><code>playerMove()</code> - Handles user input with validation</li>
-                            <li><code>computerMove()</code> - AI opponent logic</li>
-                            <li><code>checkWinner()</code> - Evaluates all win conditions</li>
-                            <li><code>checkTie()</code> - Detects draw scenarios</li>
-                        </ul>
-
-                        <p><strong>Repository:</strong> <a href="https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP" target="_blank">View on GitHub</a></p>
-                    </div>
-
-                    <h3>Game Architecture</h3>
-                    <code>// Main Game Loop with Color Support
-    #include <windows.h>
-
-    void setColor(int color) {
-        SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), color);
     }
+}</code></pre>
+                    </div>
+                </article>
+            </section>
 
-    int main() {
-        char playAgain;
-        srand(time(0));
-        
-        do {
-            char spaces[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
-            char player = 'X';
-            char computer = 'O';
-            bool running = true;
-            
-            while(running) {
-                playerMove(spaces, player);
-                drawBoard(spaces);
-                if(checkWinner(spaces, player, computer)) {
-                    running = false;
-                }
+            <!-- Python Projects Section -->
+            <section class="main-section" id="Python_Projects">
+                <div class="section-header">
+                    <div class="section-icon python">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Python Projects</h1>
+                        <p class="section-subtitle">Standalone Binaries • GUI Applications</p>
+                    </div>
+                </div>
                 
-                computerMove(spaces, computer);
-                drawBoard(spaces);
-                if(checkWinner(spaces, player, computer)) {
-                    running = false;
-                }
+                <article class="section-content">
+                    <p class="section-intro">
+                        Python is my go-to language for logic puzzles, game development, and rapid application development. 
+                        I leverage libraries like Pygame, NumPy, and Tkinter for interactive applications.
+                    </p>
+
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-icon connect4">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>Connect4 Game</h3>
+                                <p>Pygame with PyInstaller Binary</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                A fully-featured graphical implementation packaged as a <strong>standalone binary via PyInstaller</strong>—no 
+                                Python interpreter needed.
+                            </p>
+
+                            <div class="callout production">
+                                <div class="callout-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <div class="callout-content">
+                                    <h4>Production-Ready Packaging</h4>
+                                    <p>Single .exe with embedded Python runtime and all dependencies included.</p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python 3.8+</span>
+                                <span class="tech-tag">Pygame</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">PyInstaller</span>
+                            </div>
+
+                            <div class="feature-list">
+                                <div class="feature-item"><i class="fas fa-check"></i><span>NumPy arrays for efficient 6x7 board</span></div>
+                                <div class="feature-item"><i class="fas fa-check"></i><span>O(1) optimized win detection algorithm</span></div>
+                                <div class="feature-item"><i class="fas fa-check"></i><span>Dynamic screen sizing</span></div>
+                                <div class="feature-item"><i class="fas fa-check"></i><span>Two-player mode with custom names</span></div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Mikky-mlh/Connect4-in-Python" target="_blank" class="project-link primary">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon guess">
+                                <i class="fas fa-dice"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>Guess The Number</h3>
+                                <p>Tkinter GUI Application</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>My first GUI project utilizing Tkinter, marking my transition from command-line to GUI applications.</p>
+                            <div class="feature-list compact">
+                                <div class="feature-item"><i class="fas fa-check"></i><span>Clean Tkinter interface with custom styling</span></div>
+                                <div class="feature-item"><i class="fas fa-check"></i><span>Color-coded feedback hints</span></div>
+                                <div class="feature-item"><i class="fas fa-check"></i><span>Input validation and guess counter</span></div>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Mikky-mlh/GuessTheNumberGame" target="_blank" class="project-link primary">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">
+                        <i class="fas fa-code"></i> Win Detection Algorithm
+                    </h3>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">Python</span>
+                            <span class="code-file">connect4.py</span>
+                        </div>
+                        <pre><code><span class="comment"># Optimized win detection using direction vectors</span>
+<span class="keyword">def</span> <span class="function">winning_move</span>(board, piece):
+    <span class="comment"># Check all possible winning locations</span>
+    <span class="comment"># Directions: horizontal, vertical, positive/negative diagonal</span>
+    directions = [(<span class="number">0</span>, <span class="number">1</span>), (<span class="number">1</span>, <span class="number">0</span>), (<span class="number">1</span>, <span class="number">1</span>), (<span class="number">1</span>, <span class="number">-1</span>)]
+    
+    <span class="keyword">for</span> r_start <span class="keyword">in</span> <span class="function">range</span>(ROW_COUNT):
+        <span class="keyword">for</span> c_start <span class="keyword">in</span> <span class="function">range</span>(COLUMN_COUNT):
+            <span class="keyword">for</span> dr, dc <span class="keyword">in</span> directions:
+                <span class="comment"># Check if 4 consecutive pieces exist</span>
+                <span class="keyword">if</span> <span class="number">0</span> <= r_start + <span class="number">3</span>*dr < ROW_COUNT <span class="keyword">and</span> \
+                   <span class="number">0</span> <= c_start + <span class="number">3</span>*dc < COLUMN_COUNT:
+                    <span class="keyword">if</span> <span class="function">all</span>(board[r_start + i*dr][c_start + i*dc] == piece 
+                           <span class="keyword">for</span> i <span class="keyword">in</span> <span class="function">range</span>(<span class="number">4</span>)):
+                        <span class="keyword">return</span> <span class="keyword">True</span>
+    <span class="keyword">return</span> <span class="keyword">False</span></code></pre>
+                    </div>
+                </article>
+            </section>
+
+            <!-- C++ Programming Section -->
+            <section class="main-section" id="CPP_Programming">
+                <div class="section-header">
+                    <div class="section-icon cpp">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>C++ Programming</h1>
+                        <p class="section-subtitle">Systems Programming • Windows Console API</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        I use C++ to understand low-level memory management, game logic loops, and systems programming. 
+                        My focus is on creating engaging console applications with advanced terminal features.
+                    </p>
+
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-icon tictactoe">
+                                <i class="fas fa-times"></i>
+                            </div>
+                            <div class="project-title-wrap">
+                                <h3>Tic-Tac-Toe in C++</h3>
+                                <p>Windows Console Game with AI</p>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <p>
+                                A console-based implementation featuring Windows console color manipulation 
+                                and clean game architecture with AI opponent.
+                            </p>
+
+                            <div class="feature-grid">
+                                <div class="feature-box">
+                                    <i class="fab fa-windows"></i>
+                                    <h4>Windows API</h4>
+                                    <p>SetConsoleTextAttribute for colors</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-robot"></i>
+                                    <h4>Smart AI</h4>
+                                    <p>Computer opponent with validation</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-check-double"></i>
+                                    <h4>8 Win Patterns</h4>
+                                    <p>Complete win detection</p>
+                                </div>
+                                <div class="feature-box">
+                                    <i class="fas fa-redo"></i>
+                                    <h4>Play Again</h4>
+                                    <p>Continuous gameplay support</p>
+                                </div>
+                            </div>
+
+                            <div class="tech-stack">
+                                <span class="tech-tag">C++ 11+</span>
+                                <span class="tech-tag">Windows.h</span>
+                                <span class="tech-tag">Console Graphics</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/Mikky-mlh/Tic-Tac-Toe-in-CPP" target="_blank" class="project-link primary">
+                                <i class="fab fa-github"></i> View Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">
+                        <i class="fas fa-code"></i> Game Architecture
+                    </h3>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">C++</span>
+                            <span class="code-file">tictactoe.cpp</span>
+                        </div>
+                        <pre><code><span class="comment">// Main Game Loop with Color Support</span>
+<span class="preprocessor">#include</span> <span class="string">&lt;windows.h&gt;</span>
+
+<span class="keyword">void</span> <span class="function">setColor</span>(<span class="keyword">int</span> color) {
+    <span class="function">SetConsoleTextAttribute</span>(
+        <span class="function">GetStdHandle</span>(STD_OUTPUT_HANDLE), color);
+}
+
+<span class="keyword">int</span> <span class="function">main</span>() {
+    <span class="keyword">char</span> playAgain;
+    <span class="function">srand</span>(<span class="function">time</span>(<span class="number">0</span>));
+    
+    <span class="keyword">do</span> {
+        <span class="keyword">char</span> spaces[<span class="number">9</span>] = {<span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>, <span class="string">' '</span>};
+        <span class="keyword">bool</span> running = <span class="keyword">true</span>;
+        
+        <span class="keyword">while</span>(running) {
+            <span class="function">playerMove</span>(spaces, player);
+            <span class="function">drawBoard</span>(spaces);
+            <span class="keyword">if</span>(<span class="function">checkWinner</span>(spaces, player, computer)) {
+                running = <span class="keyword">false</span>;
             }
             
-            cout << "Play again? (Y/N): ";
-            cin >> playAgain;
-        } while(playAgain == 'Y' || playAgain == 'y');
+            <span class="function">computerMove</span>(spaces, computer);
+            <span class="function">drawBoard</span>(spaces);
+        }
         
-        return 0;
-    }</code>
-                </article>
-            </section>
-
-            <section class="main-section" id="Skills_&_Tech_Stack">
-                <header>Skills & Tech Stack</header>
-                <article>
-                    <h3>Programming Languages</h3>
-                    <div class="skills-grid">
-                        <div class="skill-badge">Java</div>
-                        <div class="skill-badge">Python</div>
-                        <div class="skill-badge">C++</div>
-                        <div class="skill-badge">HTML5</div>
-                        <div class="skill-badge">CSS3</div>
-                        <div class="skill-badge">JavaScript</div>
-                    </div>
-
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skills-grid">
-                        <div class="skill-badge">Pygame</div>
-                        <div class="skill-badge">NumPy</div>
-                        <div class="skill-badge">Tkinter</div>
-                        <div class="skill-badge">Java Collections</div>
-                    </div>
-
-                    <h3>Tools & Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-badge">Git & GitHub</div>
-                        <div class="skill-badge">GitHub Pages</div>
-                        <div class="skill-badge">VS Code</div>
-                        <div class="skill-badge">JDK 14+</div>
-                        <div class="skill-badge">jpackage</div>
-                        <div class="skill-badge">Windows API</div>
-                        <div class="skill-badge">FormSubmit.co</div>
-                    </div>
-
-                    <h3>Core Competencies</h3>
-                    <ul>
-                        <li><strong>Web Development:</strong> Responsive design, Glassmorphism, CSS animations, Semantic HTML, Form handling, JavaScript DOM manipulation</li>
-                        <li><strong>JavaScript:</strong> Modal dialogs, Smooth scroll, Event handling, Form validation, Interactive UI</li>
-                        <li><strong>Data Structures & Algorithms:</strong> Pattern recognition, Time-space complexity analysis, Multiple solution approaches, Java Collections Framework</li>
-                        <li><strong>Game Development:</strong> Logic systems, Win detection algorithms, GUI design, State management</li>
-                        <li><strong>Systems Programming:</strong> Memory management, Console applications, ANSI codes, Resource loading</li>
-                        <li><strong>Software Engineering:</strong> OOP, Clean code, Version control, Documentation, Production-ready packaging</li>
-                        <li><strong>Cyber Security:</strong> Security best practices, Input validation, Secure coding principles</li>
-                    </ul>
-                </article>
-            </section>
-
-            <section class="main-section" id="Connect_With_Me">
-                <header>Connect With Me</header>
-                <article>
-                    <p>Let's connect! Find my work, contributions, and professional profiles across these platforms:</p>
-                    
-                    <div class="connect-buttons">
-                        <a href="https://github.com/Mikky-mlh" target="_blank" class="connect-btn github-btn">
-                            <span class="btn-icon">👾</span>
-                            <div class="btn-content">
-                                <span class="btn-title">GitHub</span>
-                                <span class="btn-subtitle">@Mikky-mlh</span>
-                            </div>
-                        </a>
-                        
-                        <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" class="connect-btn linkedin-btn">
-                            <span class="btn-icon">💼</span>
-                            <div class="btn-content">
-                                <span class="btn-title">LinkedIn</span>
-                                <span class="btn-subtitle">Yuvraj Sarathe</span>
-                            </div>
-                        </a>
-                        
-                        <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" class="connect-btn leetcode-btn">
-                            <span class="btn-icon">💻</span>
-                            <div class="btn-content">
-                                <span class="btn-title">LeetCode</span>
-                                <span class="btn-subtitle">@Mikky_mlh</span>
-                            </div>
-                        </a>
-                        
-                        <a href="https://mikky-mlh.github.io/Web-Projects/" target="_blank" class="connect-btn portfolio-btn">
-                            <span class="btn-icon">🌐</span>
-                            <div class="btn-content">
-                                <span class="btn-title">Portfolio</span>
-                                <span class="btn-subtitle">Web Projects</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="contact-info">
-                        <h3>About Me</h3>
-                        <p><strong>Education:</strong> B.Tech Cyber Security (First Year) at LNCT, Bhopal • 2025-2029</p>
-                        <p><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
-                        <p><strong>Interests:</strong> Full Stack Development, Algorithmic Problem Solving, Cyber Security</p>
-                        <p><strong>Currently Learning:</strong> JavaScript fundamentals, Advanced DSA patterns (Recursion), React.js preparation</p>
-                        <p><strong>Certifications:</strong> freeCodeCamp Responsive Web Design (Dec 2025)</p>
-                        <p><strong>Goal:</strong> Building towards a career in software engineering with expertise in full-stack development, cloud technologies, and system design. Target: Off-campus placement by 2028.</p>
+        cout << <span class="string">"Play again? (Y/N): "</span>;
+        cin >> playAgain;
+    } <span class="keyword">while</span>(playAgain == <span class="string">'Y'</span> || playAgain == <span class="string">'y'</span>);
+    
+    <span class="keyword">return</span> <span class="number">0</span>;
+}</code></pre>
                     </div>
                 </article>
             </section>
 
+            <!-- DSA Journey Section -->
+            <section class="main-section" id="DSA_Journey">
+                <div class="section-header">
+                    <div class="section-icon dsa">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>DSA Journey</h1>
+                        <p class="section-subtitle">Pattern-First Learning • Striver's A2Z Course</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        Following Striver's A2Z DSA Course with a <strong>pattern-first learning approach</strong>. 
+                        Patterns are learned, not discovered—I focus on understanding algorithmic patterns and 
+                        time-space complexity analysis rather than memorizing solutions.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-value">59</div>
+                            <div class="stat-label">Problems Solved</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-percentage"></i>
+                            </div>
+                            <div class="stat-value">64%</div>
+                            <div class="stat-label">Acceptance Rate</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-smile"></i>
+                            </div>
+                            <div class="stat-value">19</div>
+                            <div class="stat-label">Easy Problems</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="stat-value">7</div>
+                            <div class="stat-label">Medium Problems</div>
+                        </div>
+                    </div>
+
+                    <div class="progress-section">
+                        <h3>Completed Sections</h3>
+                        <div class="progress-items">
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-title">Patterns</span>
+                                    <span class="progress-count">17 problems</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                                <p class="progress-desc">Nested loops, space calculation, mathematical formulas</p>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-title">Basic Maths</span>
+                                    <span class="progress-count">31 problems</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                                <p class="progress-desc">Array ops, divisors, HCF/LCM, modulus, sieve algorithms</p>
+                            </div>
+                            <div class="progress-item">
+                                <div class="progress-header">
+                                    <span class="progress-title">Basic Recursion & Hashing</span>
+                                    <span class="progress-count">In Progress</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 35%"></div>
+                                </div>
+                                <p class="progress-desc">Current focus area</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="subsection-title">
+                        <i class="fas fa-lightbulb"></i> Key Patterns Mastered
+                    </h3>
+
+                    <div class="patterns-grid">
+                        <div class="pattern-card">
+                            <code>n % 10</code>
+                            <span>Extract last digit</span>
+                        </div>
+                        <div class="pattern-card">
+                            <code>n / 10</code>
+                            <span>Remove last digit</span>
+                        </div>
+                        <div class="pattern-card">
+                            <code>O(√n)</code>
+                            <span>Divisor optimization</span>
+                        </div>
+                        <div class="pattern-card">
+                            <code>Two Pointers</code>
+                            <span>Efficient traversal</span>
+                        </div>
+                        <div class="pattern-card">
+                            <code>HashSet</code>
+                            <span>O(1) lookups</span>
+                        </div>
+                        <div class="pattern-card">
+                            <code>Sieve</code>
+                            <span>Prime generation</span>
+                        </div>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-lang">My Workflow</span>
+                            <span class="code-file">learning-method.txt</span>
+                        </div>
+                        <pre><code><span class="comment">// My Learning Workflow</span>
+<span class="number">1.</span> Watch Striver's video for problem pattern (<span class="number">5-15</span> min)
+<span class="number">2.</span> Understand the pattern/approach explained
+<span class="number">3.</span> Attempt problem applying that pattern
+<span class="number">4.</span> If stuck, look at editorial
+<span class="number">5.</span> Re-implement independently
+
+<span class="comment">// Multiple Solutions Per Problem</span>
+- Solve with brute force first
+- Analyze time-space complexity
+- Optimize using learned patterns
+- Compare approaches
+
+<span class="comment">// Example: Contains Duplicate</span>
+<span class="keyword">Solution 1:</span> HashSet with contains() - O(n) time, O(n) space
+<span class="keyword">Solution 2:</span> Sort then check adjacent - O(n log n) <span class="string">[BAD - SLOW]</span>
+<span class="keyword">Solution 3:</span> HashSet using add() return - O(n) <span class="string">[GOOD - Optimized]</span></code></pre>
+                    </div>
+
+                    <div class="link-cards">
+                        <a href="https://github.com/Mikky-mlh/DSA-in-Java" target="_blank" class="link-card">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <strong>DSA Repository</strong>
+                                <span>All solutions with explanations</span>
+                            </div>
+                        </a>
+                        <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" class="link-card">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <strong>LeetCode Profile</strong>
+                                <span>@Mikky_mlh</span>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Skills & Tech Stack Section -->
+            <section class="main-section" id="Skills_Tech_Stack">
+                <div class="section-header">
+                    <div class="section-icon skills">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Skills & Tech Stack</h1>
+                        <p class="section-subtitle">Languages • Frameworks • Tools</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <div class="skills-section">
+                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge java"><i class="fab fa-java"></i> Java</span>
+                            <span class="skill-badge python"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-badge cpp"><i class="fas fa-code"></i> C++</span>
+                            <span class="skill-badge html"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="skill-badge css"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="skill-badge js"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3><i class="fas fa-layer-group"></i> Frameworks & Libraries</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge">Pygame</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Tkinter</span>
+                            <span class="skill-badge">Streamlit</span>
+                            <span class="skill-badge">Java Collections</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-section">
+                        <h3><i class="fas fa-wrench"></i> Tools & Technologies</h3>
+                        <div class="skills-grid">
+                            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                            <span class="skill-badge"><i class="fab fa-github"></i> GitHub Pages</span>
+                            <span class="skill-badge"><i class="fas fa-code"></i> VS Code</span>
+                            <span class="skill-badge">JDK 14+</span>
+                            <span class="skill-badge">jpackage</span>
+                            <span class="skill-badge">PyInstaller</span>
+                            <span class="skill-badge">FormSubmit.co</span>
+                        </div>
+                    </div>
+
+                    <div class="competencies">
+                        <h3><i class="fas fa-star"></i> Core Competencies</h3>
+                        <div class="competency-list">
+                            <div class="competency-item">
+                                <h4><i class="fas fa-globe"></i> Web Development</h4>
+                                <p>Responsive design, Glassmorphism, CSS animations, Semantic HTML, Form handling, JavaScript DOM</p>
+                            </div>
+                            <div class="competency-item">
+                                <h4><i class="fas fa-database"></i> Data Structures & Algorithms</h4>
+                                <p>Pattern recognition, Time-space complexity, Multiple solution approaches, Java Collections</p>
+                            </div>
+                            <div class="competency-item">
+                                <h4><i class="fas fa-gamepad"></i> Game Development</h4>
+                                <p>Logic systems, Win detection algorithms, GUI design, State management</p>
+                            </div>
+                            <div class="competency-item">
+                                <h4><i class="fas fa-microchip"></i> Systems Programming</h4>
+                                <p>Memory management, Console applications, ANSI codes, Resource loading</p>
+                            </div>
+                            <div class="competency-item">
+                                <h4><i class="fas fa-shield-alt"></i> Cyber Security</h4>
+                                <p>Security best practices, Input validation, Secure coding principles</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Connect Section -->
+            <section class="main-section" id="Connect">
+                <div class="section-header">
+                    <div class="section-icon connect">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="section-title-wrap">
+                        <h1>Connect With Me</h1>
+                        <p class="section-subtitle">Let's Build Something Together</p>
+                    </div>
+                </div>
+                
+                <article class="section-content">
+                    <p class="section-intro">
+                        Find my work, contributions, and professional profiles across these platforms:
+                    </p>
+
+                    <div class="connect-grid">
+                        <a href="https://github.com/Mikky-mlh" target="_blank" class="connect-card github">
+                            <div class="connect-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="connect-info">
+                                <h4>GitHub</h4>
+                                <span>@Mikky-mlh</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/yuvraj-sarathe" target="_blank" class="connect-card linkedin">
+                            <div class="connect-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="connect-info">
+                                <h4>LinkedIn</h4>
+                                <span>Yuvraj Sarathe</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://leetcode.com/u/Mikky_mlh/" target="_blank" class="connect-card leetcode">
+                            <div class="connect-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="connect-info">
+                                <h4>LeetCode</h4>
+                                <span>@Mikky_mlh</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://mikky-mlh.github.io/Portfolio/" target="_blank" class="connect-card portfolio">
+                            <div class="connect-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="connect-info">
+                                <h4>Portfolio</h4>
+                                <span>Live Website</span>
+                            </div>
+                        </a>
+
+                        <a href="mailto:yuvrajsarathe07@gmail.com" class="connect-card email">
+                            <div class="connect-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="connect-info">
+                                <h4>Email</h4>
+                                <span>yuvrajsarathe07@gmail.com</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="about-card">
+                        <h3><i class="fas fa-user"></i> About Me</h3>
+                        <div class="about-grid">
+                            <div class="about-item">
+                                <span class="about-label">Identity</span>
+                                <span class="about-value">Polyglot Developer • Production-First Mindset</span>
+                            </div>
+                            <div class="about-item">
+                                <span class="about-label">Education</span>
+                                <span class="about-value">B.Tech Cyber Security (1st Year) • LNCT, Bhopal</span>
+                            </div>
+                            <div class="about-item">
+                                <span class="about-label">Location</span>
+                                <span class="about-value">Bhopal, Madhya Pradesh, India</span>
+                            </div>
+                            <div class="about-item">
+                                <span class="about-label">Certification</span>
+                                <span class="about-value">freeCodeCamp Responsive Web Design (Dec 2025)</span>
+                            </div>
+                        </div>
+                        
+                        <div class="roadmap-preview">
+                            <h4>2026-2028 Roadmap</h4>
+                            <div class="roadmap-items">
+                                <div class="roadmap-item">
+                                    <span class="roadmap-date">Q1 2026</span>
+                                    <span class="roadmap-text">JavaScript mastery & Advanced DOM</span>
+                                </div>
+                                <div class="roadmap-item">
+                                    <span class="roadmap-date">Q2 2026</span>
+                                    <span class="roadmap-text">Backend with Flask & SQL</span>
+                                </div>
+                                <div class="roadmap-item">
+                                    <span class="roadmap-date">2027</span>
+                                    <span class="roadmap-text">Full-Stack (React/Cloud) & System Design</span>
+                                </div>
+                                <div class="roadmap-item">
+                                    <span class="roadmap-date">2028</span>
+                                    <span class="roadmap-text">High-scale software engineering roles</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="open-for">
+                            <h4>Open For</h4>
+                            <div class="open-tags">
+                                <span>Technical Feedback</span>
+                                <span>Open-source Collaboration</span>
+                                <span>Security-focused Development</span>
+                            </div>
+                        </div>
+
+                        <blockquote class="quote">
+                            "Quality is not an act, it is a habit."
+                        </blockquote>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Footer -->
+            <footer class="doc-footer">
+                <div class="footer-content">
+                    <p>
+                        <strong>Yuvraj Sarathe</strong> • Polyglot Developer • Production-First Mindset
+                    </p>
+                    <p class="footer-links">
+                        <a href="https://mikky-mlh.github.io/Portfolio/">Portfolio</a>
+                        <span>•</span>
+                        <a href="https://github.com/Mikky-mlh">GitHub</a>
+                        <span>•</span>
+                        <a href="https://www.linkedin.com/in/yuvraj-sarathe">LinkedIn</a>
+                    </p>
+                    <p class="footer-note">© 2025 | Built with HTML & CSS</p>
+                </div>
+            </footer>
         </main>
+
+        <!-- Back to Top -->
+        <a href="#Introduction" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
     </body>
 </html>
